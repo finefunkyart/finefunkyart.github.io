@@ -3,309 +3,59 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Jaqulin Joseph | Artist · Photographer · Sculptor · Author</title>
-<meta name="description" content="Official portfolio of Jaqulin Joseph: painting, mixed media, sculpture, photography, books and wearable art.">
-<meta property="og:title" content="Jaqulin Joseph | Artist">
-<meta property="og:description" content="Painting, mixed media, sculpture, photography, books and wearable art by Jaqulin Joseph.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://jaqulin.com/">
+<meta name="description" content="The official portfolio of New Orleans artist, photographer, sculptor, author and educator Jaqulin Joseph.">
+<title>Jaqulin Joseph | Artist, Photographer, Sculptor & Author</title>
 <style>
-:root{
-  --paper:#fbf8f3; --cream:#fffdfa; --ink:#181512; --muted:#6c655e;
-  --rust:#a53f2c; --gold:#b98d50; --line:#ddd2c5; --dark:#181412; --max:1260px;
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--paper);color:var(--ink);font-family:Georgia,"Times New Roman",serif;line-height:1.65}
-img{max-width:100%;display:block}
-a{color:inherit}
-.wrap{width:min(92%,var(--max));margin:auto}
-.nav{position:sticky;top:0;z-index:50;background:rgba(251,248,243,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.navin{display:flex;justify-content:space-between;align-items:center;gap:24px;padding:15px 0}
-.brand{text-decoration:none;font-weight:700;letter-spacing:.11em}
-.links{display:flex;gap:17px;flex-wrap:wrap}
-.links a{text-decoration:none;color:var(--muted);font-size:.86rem}
-.links a:hover{color:var(--rust)}
-.hero{padding:72px 0 82px}
-.heroGrid{display:grid;grid-template-columns:.88fr 1.12fr;gap:52px;align-items:center}
-.kicker{text-transform:uppercase;letter-spacing:.22em;font-size:.76rem;color:var(--rust)}
-h1{font-size:clamp(3.7rem,8vw,7.7rem);line-height:.88;margin:.18em 0 .2em;font-weight:600}
-.lead{font-size:clamp(1.05rem,2vw,1.3rem);color:var(--muted);max-width:47rem}
-.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
-.btn{display:inline-block;text-decoration:none;border:1px solid var(--ink);padding:12px 18px;text-transform:uppercase;letter-spacing:.12em;font-size:.75rem}
-.btn.fill{background:var(--ink);color:#fff}
-.heroArt{position:relative}
-.heroArt img{width:100%;object-fit:contain;background:white;box-shadow:0 24px 60px rgba(0,0,0,.14)}
-.heroArt:after{content:"";position:absolute;inset:18px -18px -18px 18px;border:1px solid var(--gold);z-index:-1}
-.caption{margin-top:15px;color:var(--muted);font-size:.92rem}
-.caption strong{color:var(--ink);font-size:1.15rem}
-.quote{padding:78px 0;background:var(--dark);color:#f7f0e8}
-.quote blockquote{font-size:clamp(1.8rem,4vw,3.7rem);line-height:1.14;margin:0;max-width:1080px}
-.quote cite{display:block;margin-top:22px;color:#c9b9a8;font-style:normal;text-transform:uppercase;letter-spacing:.12em;font-size:.75rem}
-.section{padding:88px 0}
-.head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:38px;border-bottom:1px solid var(--line);padding-bottom:18px}
-.head h2{font-size:clamp(2.4rem,5vw,5rem);line-height:1;margin:0}
-.head p{max-width:510px;color:var(--muted);margin:0}
-.feature{display:grid;grid-template-columns:1.12fr .88fr;background:var(--cream);margin-bottom:28px}
-.feature img{width:100%;height:100%;min-height:640px;object-fit:contain;background:#fff}
-.copy{padding:34px}
-.copy h3{font-size:clamp(2rem,4vw,3.4rem);margin:.1em 0 .35em;line-height:1}
-.meta{color:var(--rust);font-size:.76rem;text-transform:uppercase;letter-spacing:.12em}
-.copy p{color:#4f4943}
-.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
-.work{background:var(--cream)}
-.work img{width:100%;height:500px;object-fit:cover}
-.work .copy{padding:26px}
-.work h3{font-size:1.7rem;margin:.1em 0 .2em}
-.sculpt{background:#ece2d5}
-.sculptGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.sculptCard{background:var(--cream);padding:16px}
-.sculptCard img{height:350px;width:100%;object-fit:contain;background:#fff}
-.sculptCard h3{font-size:1.25rem;margin:.75rem 0 .2rem}
-.sculptCard p{font-size:.93rem;color:var(--muted)}
-.photoBlock{display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:center}
-.photoBlock img{width:100%;max-height:700px;object-fit:cover;object-position:center;background:#fff}
-.photoText h3{font-size:clamp(2rem,4vw,3.5rem);line-height:1.05;margin:.2em 0}
-.aboutGrid{display:grid;grid-template-columns:.8fr 1.2fr;gap:50px;align-items:start}
-.portrait img{width:100%;max-height:760px;object-fit:cover;object-position:center top}
-.aboutText h2{font-size:clamp(2.7rem,5vw,5.5rem);line-height:.95;margin:.15em 0 .4em}
-.bio{font-size:1.08rem}
-.books{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
-.book{border:1px solid var(--line);background:var(--cream);padding:28px}
-.book h3{font-size:1.5rem;line-height:1.15;margin:.1em 0 .45em}
-.book a{display:inline-block;margin-top:10px;color:var(--rust)}
-.shop{background:#fff}
-.shopGrid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
-.shopMark{border:1px solid var(--line);padding:52px;text-align:center}
-.shopMark h3{font-size:clamp(2.4rem,5vw,4.8rem);line-height:1;margin:.2em 0}
-.contact{background:var(--rust);color:#fff}
-.contactGrid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:end}
-.contact h2{font-size:clamp(3rem,7vw,7rem);line-height:.9;margin:0}
-.contact a{color:#fff}
-.footer{padding:34px 0;font-size:.85rem;color:var(--muted)}
-.footerin{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
-@media(max-width:920px){
-  .links{display:none}
-  .heroGrid,.feature,.photoBlock,.aboutGrid,.shopGrid,.contactGrid{grid-template-columns:1fr}
-  .gallery{grid-template-columns:1fr}
-  .sculptGrid{grid-template-columns:1fr 1fr}
-  .heroArt:after{display:none}
-  .feature img{min-height:0}
-}
-@media(max-width:560px){
-  .sculptGrid,.books{grid-template-columns:1fr}
-  .section{padding:60px 0}
-  .head{display:block}
-  .head p{margin-top:12px}
-  .sculptCard img,.work img{height:auto}
-}
+:root{--paper:#f8f4ed;--white:#fff;--ink:#191715;--muted:#68615a;--line:#d8cfc3;--rust:#9e3f2b;--gold:#b99152;--dark:#211d1a;--max:1220px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Georgia,"Times New Roman",serif;line-height:1.65}img{max-width:100%;display:block}a{color:inherit}.wrap{width:min(92%,var(--max));margin:auto}
+.nav{position:sticky;top:0;z-index:50;background:rgba(248,244,237,.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}.navin{display:flex;justify-content:space-between;align-items:center;gap:24px;padding:15px 0}.brand{text-decoration:none;font-weight:700;letter-spacing:.12em}.links{display:flex;gap:16px;flex-wrap:wrap}.links a{text-decoration:none;color:var(--muted);font-size:.84rem}.links a:hover{color:var(--rust)}
+.hero{padding:84px 0 92px}.heroGrid{display:grid;grid-template-columns:.9fr 1.1fr;gap:58px;align-items:center}.kicker,.meta{text-transform:uppercase;letter-spacing:.2em;font-size:.73rem;color:var(--rust)}h1{font-size:clamp(3.8rem,8vw,8rem);line-height:.86;margin:.18em 0 .2em;font-weight:600}.lead{font-size:clamp(1.05rem,2vw,1.32rem);color:var(--muted);max-width:47rem}.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-block;text-decoration:none;border:1px solid var(--ink);padding:12px 18px;text-transform:uppercase;letter-spacing:.12em;font-size:.74rem}.btn.fill{background:var(--ink);color:#fff}.heroArt{position:relative}.heroArt img{width:100%;max-height:720px;object-fit:contain;background:#fff;box-shadow:0 24px 60px rgba(0,0,0,.14)}.heroArt:after{content:"";position:absolute;inset:18px -18px -18px 18px;border:1px solid var(--gold);z-index:-1}.caption{margin-top:15px;color:var(--muted);font-size:.92rem}.caption strong{color:var(--ink);font-size:1.14rem}
+.quote{padding:76px 0;background:var(--dark);color:#f7f0e8}.quote blockquote{font-size:clamp(1.8rem,4vw,3.65rem);line-height:1.14;margin:0;max-width:1080px}.quote cite{display:block;margin-top:22px;color:#c9b9a8;font-style:normal;text-transform:uppercase;letter-spacing:.12em;font-size:.75rem}
+.section{padding:92px 0}.head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:40px;border-bottom:1px solid var(--line);padding-bottom:18px}.head h2{font-size:clamp(2.5rem,5vw,5rem);line-height:1;margin:0}.head p{max-width:520px;color:var(--muted);margin:0}.feature{display:grid;grid-template-columns:1.08fr .92fr;background:#eee5d9;margin-bottom:28px}.feature img{width:100%;height:100%;min-height:620px;object-fit:contain;background:#fff}.copy{padding:34px}.copy h3{font-size:clamp(2rem,4vw,3.4rem);margin:.1em 0 .35em;line-height:1}.copy p{color:#4f4943}.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}.work{background:#eee5d9}.work img{width:100%;height:500px;object-fit:contain;background:#fff}.work .copy{padding:25px}.work h3{font-size:1.7rem;margin:.1em 0 .2em}
+.sculpt{background:#e9dfd2}.sculptGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.sculptCard{background:var(--paper);padding:16px}.sculptCard img{height:360px;width:100%;object-fit:contain;background:#fff}.sculptCard h3{font-size:1.25rem;margin:.75rem 0 .2rem}.sculptCard p{font-size:.93rem;color:var(--muted)}
+.photoStage{background:var(--dark);color:#f7f0e8;padding:clamp(36px,7vw,84px);display:grid;grid-template-columns:.85fr 1.15fr;gap:50px;align-items:end}.photoStage h3{font-size:clamp(2.5rem,5vw,5.4rem);line-height:.94;margin:.1em 0}.photoStage p{color:#d3c9bf;font-size:1.06rem}.photoStage .kicker{color:#e6bd7e}.photoRule{min-height:360px;border:1px solid #6d625a;display:flex;align-items:center;justify-content:center;padding:30px;text-align:center;color:#c8bbb0;letter-spacing:.12em;text-transform:uppercase;font-size:.78rem}
+.sneak{background:#fff}.sneakGrid{display:grid;grid-template-columns:1.08fr .92fr;gap:54px;align-items:center}.purseFrame{position:relative;background:#f5f0e9;padding:32px}.purseFrame img{width:100%;max-height:720px;object-fit:contain;background:#fff}.badge{position:absolute;top:18px;left:18px;background:var(--rust);color:#fff;padding:9px 13px;letter-spacing:.17em;text-transform:uppercase;font-size:.68rem}.sneak h2{font-size:clamp(2.7rem,5vw,5.6rem);line-height:.95;margin:.15em 0 .35em}.sneakQuote{font-size:1.55rem;color:var(--rust);border-left:2px solid var(--gold);padding-left:20px;margin:28px 0}
+.aboutGrid{display:grid;grid-template-columns:.78fr 1.22fr;gap:52px;align-items:start}.portrait img{width:100%;max-height:760px;object-fit:contain;background:#fff}.aboutText h2{font-size:clamp(2.7rem,5vw,5.5rem);line-height:.95;margin:.15em 0 .4em}.bio{font-size:1.07rem}
+.books{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}.book{border:1px solid var(--line);background:#eee5d9;padding:28px}.book h3{font-size:1.5rem;line-height:1.15;margin:.1em 0 .45em}.book a{display:inline-block;margin-top:10px;color:var(--rust)}
+.contact{background:var(--rust);color:#fff}.contactGrid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:end}.contact h2{font-size:clamp(3rem,7vw,7rem);line-height:.9;margin:0}.contact a{color:#fff}.footer{padding:34px 0;font-size:.85rem;color:var(--muted)}.footerin{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:920px){.links{display:none}.heroGrid,.feature,.photoStage,.sneakGrid,.aboutGrid,.contactGrid{grid-template-columns:1fr}.gallery{grid-template-columns:1fr}.sculptGrid{grid-template-columns:1fr 1fr}.heroArt:after{display:none}.feature img{min-height:0}.photoRule{min-height:220px}}
+@media(max-width:560px){.sculptGrid,.books{grid-template-columns:1fr}.section{padding:62px 0}.head{display:block}.head p{margin-top:12px}.sculptCard img,.work img{height:auto}.purseFrame{padding:18px}}
 </style>
 </head>
 <body>
-<nav class="nav">
-  <div class="wrap navin">
-    <a class="brand" href="#top">JAQULIN JOSEPH</a>
-    <div class="links">
-      <a href="#art">Art</a>
-      <a href="#sculpture">Sculpture</a>
-      <a href="#photography">Photography</a>
-      <a href="#books">Books</a>
-      <a href="#about">About</a>
-      <a href="#shop">Shop</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </div>
-</nav>
-
+<nav class="nav"><div class="wrap navin"><a class="brand" href="#top">JAQULIN JOSEPH</a><div class="links"><a href="#art">Art</a><a href="#sculpture">Sculpture</a><a href="#photography">Photography</a><a href="#purses">Purse Sneak Peek</a><a href="#books">Books</a><a href="#about">About</a><a href="#contact">Contact</a></div></div></nav>
 <main id="top">
-
-<section class="hero">
-  <div class="wrap heroGrid">
-    <div>
-      <div class="kicker">Artist · Photographer · Sculptor · Author · Educator</div>
-      <h1>Jaqulin<br>Joseph</h1>
-      <p class="lead">I create work about memory, womanhood, ancestry, survival, belonging and the complicated beauty of being alive. Across painting, mixed media, sculpture, photography and writing, I use color, texture, found material and the human figure to turn lived experience into form.</p>
-      <div class="buttons">
-        <a class="btn fill" href="#art">View the work</a>
-        <a class="btn" href="mailto:jaqjos@gmail.com">Gallery inquiries</a>
-      </div>
-    </div>
-    <div class="heroArt">
-      <img src="assets/suddenly-sassy.jpg" alt="Suddenly Sassy by Jaqulin Joseph">
-      <div class="caption"><strong>Suddenly Sassy</strong><br>Painting by Jaqulin Joseph</div>
-    </div>
-  </div>
-</section>
-
-<section class="quote">
-  <div class="wrap">
-    <blockquote>“Art gives form to what is felt deeply. It lets me speak, remember, witness and imagine.”</blockquote>
-    <cite>— Jaqulin Joseph</cite>
-  </div>
-</section>
-
-<section class="section" id="art">
-  <div class="wrap">
-    <div class="head">
-      <h2>Selected Art</h2>
-      <p>Paintings and mixed-media works rooted in identity, memory, history, the body, connection and transformation.</p>
-    </div>
-
-    <article class="feature">
-      <img src="assets/suddenly-sassy.jpg" alt="Suddenly Sassy painting by Jaqulin Joseph">
-      <div class="copy">
-        <div class="meta">Featured painting</div>
-        <h3>Suddenly Sassy</h3>
-        <p><em>Suddenly Sassy</em> gathers several faces into one restless, expressive field. Eyes, lips, curves and fragments overlap and interrupt one another, suggesting the many selves a woman may carry at the same time: observant, playful, guarded, sensual, questioning and completely her own.</p>
-        <p>The bright yellows, reds, greens and turquoise refuse quietness. The figures do not ask permission to take up space. Instead, they meet the viewer directly, creating a conversation about personality, confidence, contradiction and the freedom to be more than one thing at once.</p>
-        <p>Rather than presenting a single portrait, the work becomes a chorus of moods. Its sass is not simply attitude; it is presence.</p>
-        <div class="buttons">
-          <a class="btn fill" href="mailto:jaqjos@gmail.com?subject=Inquiry%20about%20Suddenly%20Sassy">Inquire about this piece</a>
-        </div>
-      </div>
-    </article>
-
-    <div class="gallery">
-      <article class="work"><img src="assets/i-have-seen.jpg" alt="I Have Seen. I Remember. by Jaqulin Joseph"><div class="copy"><div class="meta">Mixed-media assemblage</div><h3>I Have Seen. I Remember.</h3><p>Photographic film becomes memory: what we have seen, what has been done to us, what we have carried and what refuses to disappear.</p></div></article>
-      <article class="work"><img src="assets/bloodlines.jpg" alt="Bloodlines Still We Rise by Jaqulin Joseph"><div class="copy"><div class="meta">Mixed-media assemblage</div><h3>Bloodlines: Still We Rise</h3><p>The body becomes a vessel of ancestry, pain, survival and healing. We carry their wounds, their blood and their strength — and still, we rise.</p></div></article>
-      <article class="work"><img src="assets/color-tribe.jpg" alt="Color Tribe by Jaqulin Joseph"><div class="copy"><div class="meta">Painting</div><h3>Color Tribe</h3><p>A meditation on belonging without sameness. Difference does not have to disappear before connection can happen.</p></div></article>
-      <article class="work"><img src="assets/somewhere-only-we-know.jpg" alt="Somewhere Only We Know by Jaqulin Joseph"><div class="copy"><div class="meta">Painting</div><h3>Somewhere Only We Know</h3><p>A private landscape between memory and becoming — a place where love, loss, gratitude and former versions of ourselves remain.</p></div></article>
-      <article class="work"><img src="assets/katrina.jpg" alt="Katrina by Jaqulin Joseph"><div class="copy"><div class="meta">Mixed-media relief painting</div><h3>Katrina</h3><p>The empty garment becomes evidence of absence while layered surfaces carry floodwater, debris, wounds and history. The water receded. The memory did not.</p></div></article>
-      <article class="work"><img src="assets/read-my-mind.jpg" alt="Read My Mind by Jaqulin Joseph"><div class="copy"><div class="meta">Painting</div><h3>Read My Mind</h3><p>Two faces occupy the space between expression and silence, asking how much we can truly know simply by looking at another person.</p></div></article>
-    </div>
-  </div>
-</section>
-
-<section class="section sculpt" id="sculpture">
-  <div class="wrap">
-    <div class="head">
-      <h2>Sculpture</h2>
-      <p>Bronze figure studies exploring womanhood, wholeness, connection, balance and inner strength.</p>
-    </div>
-    <div class="sculptGrid">
-      <article class="sculptCard">
-        <img src="assets/solo-female.jpg" alt="Solo Female bronze sculpture by Jaqulin Joseph">
-        <h3>Solo Female</h3>
-        <div class="meta">Lost-wax cast bronze</div>
-        <p>A solitary female figure stands in her own presence. The work centers independence, vulnerability and the quiet power of occupying one’s own space without apology.</p>
-      </article>
-      <article class="sculptCard">
-        <img src="assets/committed-triangle.jpg" alt="Committed to the Triangle bronze sculpture by Jaqulin Joseph">
-        <h3>Committed to the Triangle</h3>
-        <div class="meta">Lost-wax cast bronze</div>
-        <p>A female form emerges from and pushes against a triangular structure. The geometry becomes both support and constraint, creating a tension between the body, balance, commitment and the desire to move beyond boundaries.</p>
-      </article>
-      <article class="sculptCard">
-        <img src="assets/embrace-women.jpg" alt="Embrace of the Woman bronze sculpture by Jaqulin Joseph">
-        <h3>Embrace of the Woman</h3>
-        <div class="meta">Lost-wax cast bronze</div>
-        <p>Intertwined female forms create an intimate structure of protection, tenderness and recognition. The embrace becomes a place of refuge and strength, honoring the ways women hold, witness and sustain one another.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="photography">
-  <div class="wrap">
-    <div class="head">
-      <h2>Photography</h2>
-      <p>Portraiture, place, documentary observation and the beauty hidden inside ordinary moments.</p>
-    </div>
-    <div class="photoBlock">
-      <img src="assets/jaqulin-portrait.jpg" alt="Jaqulin Joseph in an urban mural setting">
-      <div class="photoText">
-        <div class="kicker">Behind the lens</div>
-        <h3>Looking closely is part of the work.</h3>
-        <p>Photography has long been part of Jaqulin Joseph’s creative practice. Her images are rooted in observation: people, neighborhoods, architecture, memory, travel, cemeteries, visual culture and details that might otherwise be passed by.</p>
-        <p>The photography section is built into the site now so individual portfolios can be added without redesigning the website. New selections can be dropped into the gallery as they are prepared.</p>
-        <div class="buttons"><a class="btn" href="mailto:jaqjos@gmail.com?subject=Photography%20Inquiry">Photography inquiry</a></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="about">
-  <div class="wrap aboutGrid">
-    <div class="portrait"><img src="assets/jaqulin-portrait.jpg" alt="Portrait of artist Jaqulin Joseph"></div>
-    <div class="aboutText">
-      <div class="kicker">About the artist</div>
-      <h2>Art as witness.<br>Art as memory.<br>Art as survival.</h2>
-      <div class="bio">
-        <p><strong>Jaqulin Joseph</strong> is a New Orleans–area visual artist, photographer, sculptor, author and educator whose practice moves across painting, mixed media, assemblage, bronze sculpture, photography and writing.</p>
-        <p>Her work is rooted in emotion, memory, observation, identity and transformation. She is especially interested in womanhood, ancestry, resilience, belonging, grief, history and the ways personal experience becomes physical material.</p>
-        <p>Joseph holds a Bachelor of Arts in Fine Arts from the University of New Orleans. Her professional life has included work as an art instructor, freelance photographer, gallery director and owner, assistant gallery director, art director, educator and community-engagement professional.</p>
-        <p>She founded and operated Abstrax Arts Gallery and Photography Studio in San Diego, where she developed exhibitions, connected artists with buyers, taught art and created visual communications. Whether making an image, building a sculpture, writing a book or teaching, she approaches creativity as an act of truth-telling, discovery and connection.</p>
-      </div>
-      <div class="buttons">
-        <a class="btn fill" href="mailto:jaqjos@gmail.com">Contact Jaqulin</a>
-        <a class="btn" href="https://villageofus.com" target="_blank" rel="noopener">Village of Us ↗</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="books">
-  <div class="wrap">
-    <div class="head">
-      <h2>Books & Publications</h2>
-      <p>Food, humor, photography, survival, reflection and imagination — another branch of the same creative life.</p>
-    </div>
-    <div class="books">
-      <article class="book"><div class="meta">Publication</div><h3>Soulful Chickpeas</h3><p><em>60 Irresistible Recipes with a Side of Humor, History &amp; Heart</em>.</p><a href="https://www.amazon.com/s?k=Soulful+Chickpeas+Jaqulin+Joseph" target="_blank" rel="noopener">Find on Amazon ↗</a></article>
-      <article class="book"><div class="meta">Publication</div><h3>Bizarre Coloring Book for Adults</h3><p>More than forty unusual images created for coloring and imaginative play.</p><a href="https://www.amazon.com/s?k=Bizarre+Coloring+Book+Jaqulin+Joseph" target="_blank" rel="noopener">Find on Amazon ↗</a></article>
-      <article class="book"><div class="meta">Photography publication</div><h3>Pieces of London, Parts of France</h3><p>Included as part of Jaqulin Joseph’s publication history.</p><a href="https://www.amazon.com/s?k=Pieces+of+London+Parts+of+France+Jaqulin+Joseph" target="_blank" rel="noopener">Search Amazon ↗</a></article>
-      <article class="book"><div class="meta">Publication</div><h3>Single Mother’s Survival Guide</h3><p>A book by Jaqulin Joseph.</p><a href="https://www.amazon.com/s?k=Single+Mother%27s+Survival+Guide+Jaqulin+Joseph" target="_blank" rel="noopener">Find on Amazon ↗</a></article>
-      <article class="book"><div class="meta">Publication</div><h3>Fear</h3><p>A book by Jaqulin Joseph.</p><a href="https://www.amazon.com/s?k=Fear+Jaqulin+Joseph" target="_blank" rel="noopener">Search Amazon ↗</a></article>
-      <article class="book"><div class="meta">Publication</div><h3>The Door You Don’t See</h3><p>A book by Jaqulin Joseph.</p><a href="https://www.amazon.com/s?k=The+Door+You+Don%27t+See+Jaqulin+Joseph" target="_blank" rel="noopener">Search Amazon ↗</a></article>
-      <article class="book"><div class="meta">Publication</div><h3>Between Fear and Forgiveness</h3><p>A book by Jaqulin Joseph.</p><a href="https://www.amazon.com/s?k=Between+Fear+and+Forgiveness+Jaqulin+Joseph" target="_blank" rel="noopener">Search Amazon ↗</a></article>
-    </div>
-  </div>
-</section>
-
-<section class="section shop" id="shop">
-  <div class="wrap shopGrid">
-    <div>
-      <div class="kicker">Wearable art · Original objects · Fine Funky Art</div>
-      <div class="shopMark">
-        <div class="meta">Coming soon</div>
-        <h3>FineFunkyArt.com</h3>
-        <p>Original art, hand-painted art bags, objects and creative work made to live beyond the gallery wall.</p>
-      </div>
-    </div>
-    <div>
-      <h2 style="font-size:clamp(2.5rem,5vw,5rem);line-height:1;margin:.1em 0 .35em">Art you can live with.</h2>
-      <p>Fine Funky Art extends Jaqulin’s studio practice into one-of-a-kind objects and wearable art. The shop section is ready for new pieces as they are photographed and listed.</p>
-      <div class="buttons">
-        <a class="btn fill" href="https://www.etsy.com/shop/finefunkyart" target="_blank" rel="noopener">Visit Fine Funky Art ↗</a>
-        <a class="btn" href="https://finefunkyart.com" target="_blank" rel="noopener">FineFunkyArt.com ↗</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section contact" id="contact">
-  <div class="wrap contactGrid">
-    <div>
-      <div class="kicker" style="color:#ffe1d7">Exhibitions · Collectors · Collaborations</div>
-      <h2>Let’s talk<br>about the work.</h2>
-    </div>
-    <div>
-      <p>For exhibitions, gallery representation, artwork inquiries, commissions, photography, workshops, interviews or creative collaborations:</p>
-      <p style="font-size:1.5rem"><a href="mailto:jaqjos@gmail.com">jaqjos@gmail.com</a></p>
-      <p><a href="https://villageofus.com" target="_blank" rel="noopener">Village of Us ↗</a> &nbsp; · &nbsp; <a href="https://www.etsy.com/shop/finefunkyart" target="_blank" rel="noopener">Fine Funky Art ↗</a></p>
-    </div>
-  </div>
-</section>
-
+<section class="hero"><div class="wrap heroGrid"><div><div class="kicker">Artist · Photographer · Sculptor · Author · Educator</div><h1>Jaqulin<br>Joseph</h1><p class="lead">I create work about memory, womanhood, ancestry, survival, belonging and the complicated beauty of being alive. Across painting, mixed media, sculpture, photography and writing, I turn lived experience into form.</p><div class="buttons"><a class="btn fill" href="#art">Enter the gallery</a><a class="btn" href="mailto:jaqjos@gmail.com">Gallery inquiries</a></div></div><div class="heroArt"><img src="assets/i-have-seen.jpg" alt="I Have Seen. I Remember. by Jaqulin Joseph"><div class="caption"><strong>I Have Seen. I Remember.</strong><br>Mixed-media assemblage by Jaqulin Joseph</div></div></div></section>
+<section class="quote"><div class="wrap"><blockquote>“Art gives form to what is felt deeply. It lets me speak, remember, witness and imagine.”</blockquote><cite>— Jaqulin Joseph</cite></div></section>
+<section class="section" id="art"><div class="wrap"><div class="head"><h2>Selected Art</h2><p>Paintings and mixed-media works rooted in identity, memory, history, the body, connection and transformation.</p></div>
+<article class="feature"><img src="assets/bloodlines.jpg" alt="Bloodlines: Still We Rise by Jaqulin Joseph"><div class="copy"><div class="meta">Featured mixed-media work</div><h3>Bloodlines: Still We Rise</h3><p>The body becomes a vessel of ancestry, pain, survival and healing. We carry their wounds, their blood and their strength—and still, we rise.</p><p>Layered surfaces hold the tension between inheritance and self-creation. The work refuses erasure; it stands as witness.</p><div class="buttons"><a class="btn fill" href="mailto:jaqjos@gmail.com?subject=Artwork%20inquiry">Inquire about the work</a></div></div></article>
+<div class="gallery">
+<article class="work"><img src="assets/i-have-seen.jpg" alt="I Have Seen. I Remember. by Jaqulin Joseph"><div class="copy"><div class="meta">Mixed-media assemblage</div><h3>I Have Seen. I Remember.</h3><p>Photographic film becomes memory: what we have seen, what has been done to us, what we have carried and what refuses to disappear.</p></div></article>
+<article class="work"><img src="assets/color-tribe.jpg" alt="Color Tribe by Jaqulin Joseph"><div class="copy"><div class="meta">Painting</div><h3>Color Tribe</h3><p>A meditation on belonging without sameness. Difference does not have to disappear before connection can happen.</p></div></article>
+<article class="work"><img src="assets/somewhere-only-we-know.jpg" alt="Somewhere Only We Know by Jaqulin Joseph"><div class="copy"><div class="meta">Painting</div><h3>Somewhere Only We Know</h3><p>A private landscape between memory and becoming, where love, loss, gratitude and former versions of ourselves remain.</p></div></article>
+<article class="work"><img src="assets/katrina.jpg" alt="Katrina by Jaqulin Joseph"><div class="copy"><div class="meta">Mixed-media relief painting</div><h3>Katrina</h3><p>The empty garment becomes evidence of absence while layered surfaces carry floodwater, debris, wounds and history. The water receded. The memory did not.</p></div></article>
+<article class="work"><img src="assets/read-my-mind.jpg" alt="Read My Mind by Jaqulin Joseph"><div class="copy"><div class="meta">Painting</div><h3>Read My Mind</h3><p>Two faces occupy the space between expression and silence, asking how much we can truly know simply by looking at another person.</p></div></article>
+<article class="work"><img src="assets/abstract-bottles-fruit.jpg" alt="Abstract still life by Jaqulin Joseph"><div class="copy"><div class="meta">Painting</div><h3>Still Life in Motion</h3><p>Color, vessel and fruit break loose from stillness, turning the familiar into rhythm.</p></div></article>
+</div></div></section>
+<section class="section sculpt" id="sculpture"><div class="wrap"><div class="head"><h2>Bronze Sculpture</h2><p>Figure studies exploring womanhood, wholeness, balance, intimacy and the quiet force of standing in one’s own presence.</p></div><div class="sculptGrid">
+<article class="sculptCard"><img src="assets/solo-female.jpg" alt="Solo Female bronze sculpture by Jaqulin Joseph"><h3>Solo Female</h3><div class="meta">Lost-wax cast bronze</div><p>A solitary female figure claims her own space—independent, vulnerable and whole.</p></article>
+<article class="sculptCard"><img src="assets/committed-triangle.jpg" alt="Committed to the Triangle bronze sculpture by Jaqulin Joseph"><h3>Committed to the Triangle</h3><div class="meta">Lost-wax cast bronze</div><p>The body meets geometry in a study of balance, commitment, support and constraint.</p></article>
+<article class="sculptCard"><img src="assets/embrace-women.jpg" alt="Embrace of the Woman bronze sculpture by Jaqulin Joseph"><h3>Embrace of the Woman</h3><div class="meta">Lost-wax cast bronze</div><p>Intertwined forms create a structure of tenderness, protection and the strength women offer one another.</p></article>
+</div></div></section>
+<section class="section" id="photography"><div class="wrap"><div class="head"><h2>Photography</h2><p>Portraiture, place, documentary observation and the beauty hidden inside ordinary moments.</p></div><div class="photoStage"><div><div class="kicker">Behind the lens</div><h3>Looking closely is part of the work.</h3></div><div><p>Photography has long been part of Jaqulin Joseph’s creative practice. Her eye moves through people, neighborhoods, architecture, travel, cemeteries, visual culture and details others may pass by.</p><p>This gallery is being prepared as its own body of work. The photographs will arrive here clean, uncropped and allowed to breathe.</p><div class="photoRule">Photography selections coming soon</div></div></div></div></section>
+<section class="section sneak" id="purses"><div class="wrap sneakGrid"><div class="purseFrame"><span class="badge">Sneak preview</span><img src="assets/suddenly-sassy.jpg" alt="Suddenly Sassy hand-painted clutch by Jaqulin Joseph"></div><div><div class="kicker">Upcoming wearable-art line</div><h2>Sneak Peek: Hand-Painted Clutch Collection</h2><p>A first look at an upcoming line of wearable art from Jaqulin Joseph. Each bag carries the gesture, color and personality of an original artwork—made to leave the wall and move through the world.</p><p><strong>Suddenly Sassy</strong> leads the collection: bright, expressive and entirely unafraid to be noticed.</p><div class="sneakQuote">“Art you carry. Stories you live.”</div><p class="meta">More designs coming soon</p><div class="buttons"><a class="btn fill" href="https://www.etsy.com/shop/finefunkyart" target="_blank" rel="noopener">Visit Fine Funky Art ↗</a><a class="btn" href="mailto:jaqjos@gmail.com?subject=Suddenly%20Sassy%20purse%20preview">Ask about the collection</a></div></div></div></section>
+<section class="section" id="about"><div class="wrap aboutGrid"><div class="portrait"><img src="assets/jaqulin-portrait.jpg" alt="Portrait of artist Jaqulin Joseph"></div><div class="aboutText"><div class="kicker">About the artist</div><h2>Art as witness.<br>Art as memory.<br>Art as survival.</h2><div class="bio"><p><strong>Jaqulin Joseph</strong> is a New Orleans–area visual artist, photographer, sculptor, author and educator whose practice moves across painting, mixed media, assemblage, bronze sculpture, photography and writing.</p><p>Her work is rooted in emotion, memory, observation, identity and transformation. She is especially interested in womanhood, ancestry, resilience, belonging, grief, history and the ways personal experience becomes physical material.</p><p>Joseph holds a Bachelor of Arts in Fine Arts from the University of New Orleans. Her professional life has included work as an art instructor, photographer, gallery director and owner, educator and community-engagement professional.</p><p>She founded and operated Abstrax Arts Gallery and Photography Studio in San Diego, developing exhibitions, connecting artists with buyers, teaching art and creating visual communications. Whether making an image, building a sculpture, writing a book or teaching, she approaches creativity as an act of truth-telling, discovery and connection.</p></div><div class="buttons"><a class="btn fill" href="mailto:jaqjos@gmail.com">Contact Jaqulin</a><a class="btn" href="https://villageofus.com" target="_blank" rel="noopener">Village of Us ↗</a></div></div></div></section>
+<section class="section" id="books"><div class="wrap"><div class="head"><h2>Books & Publications</h2><p>Food, humor, photography, survival, reflection and imagination—another branch of the same creative life.</p></div><div class="books">
+<article class="book"><div class="meta">Publication</div><h3>Soulful Chickpeas</h3><p>Recipes with a side of humor, history and heart.</p><a href="https://www.amazon.com/s?k=Soulful+Chickpeas+Jaqulin+Joseph" target="_blank" rel="noopener">Find on Amazon ↗</a></article>
+<article class="book"><div class="meta">Publication</div><h3>Bizarre Coloring Books for Adults</h3><p>Unusual images created for coloring and imaginative play.</p><a href="https://www.amazon.com/s?k=Bizarre+Coloring+Books+for+Adults+Jaqulin+Joseph" target="_blank" rel="noopener">Find on Amazon ↗</a></article>
+<article class="book"><div class="meta">Publication</div><h3>Single Mother Survival Guide</h3><p>A practical, personal work by Jaqulin Joseph.</p><a href="https://www.amazon.com/s?k=Single+Mother+Survival+Guide+Jaqulin+Joseph" target="_blank" rel="noopener">Find on Amazon ↗</a></article>
+<article class="book"><div class="meta">Photography publication</div><h3>Pieces of London, Parts of France</h3><p>Included as part of Jaqulin Joseph’s publication history.</p><a href="https://www.amazon.com/s?k=Pieces+of+London+Parts+of+France+Jaqulin+Joseph" target="_blank" rel="noopener">Search Amazon ↗</a></article>
+<article class="book"><div class="meta">Publication</div><h3>The Door You Don’t See</h3><p>A book by Jaqulin Joseph.</p><a href="https://www.amazon.com/s?k=The+Door+You+Don%27t+See+Jaqulin+Joseph" target="_blank" rel="noopener">Search Amazon ↗</a></article>
+<article class="book"><div class="meta">Publication</div><h3>Between Fear and Forgiveness</h3><p>A book by Jaqulin Joseph.</p><a href="https://www.amazon.com/s?k=Between+Fear+and+Forgiveness+Jaqulin+Joseph" target="_blank" rel="noopener">Search Amazon ↗</a></article>
+</div></div></section>
+<section class="section contact" id="contact"><div class="wrap contactGrid"><div><div class="kicker" style="color:#ffe1d7">Exhibitions · Collectors · Collaborations</div><h2>Let’s talk<br>about the work.</h2></div><div><p>For exhibitions, gallery representation, artwork inquiries, commissions, photography, workshops, interviews or creative collaborations:</p><p style="font-size:1.5rem"><a href="mailto:jaqjos@gmail.com">jaqjos@gmail.com</a></p><p><a href="https://villageofus.com" target="_blank" rel="noopener">Village of Us ↗</a> &nbsp;·&nbsp; <a href="https://www.etsy.com/shop/finefunkyart" target="_blank" rel="noopener">Fine Funky Art ↗</a></p></div></div></section>
 </main>
-
-<footer class="footer">
-  <div class="wrap footerin">
-    <span>© <span id="y"></span> Jaqulin Joseph. All rights reserved.</span>
-    <span>jaqulin.com</span>
-  </div>
-</footer>
-
+<footer class="footer"><div class="wrap footerin"><span>© <span id="y"></span> Jaqulin Joseph. All rights reserved.</span><span>jaqulin.com</span></div></footer>
 <script>document.getElementById("y").textContent=new Date().getFullYear()</script>
 </body>
 </html>
