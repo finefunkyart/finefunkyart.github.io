@@ -1,9 +1,14 @@
-JAQULIN.COM — COMPLETE WEBSITE PACKAGE
+JAQULIN JOSEPH ARTIST WEBSITE
 
-Upload index.html and the entire assets folder to the ROOT of the finefunkyart.github.io GitHub repository.
+This folder is ready for GitHub Pages.
 
-DO NOT delete the CNAME file if GitHub created one for jaqulin.com.
+UPLOAD THESE ITEMS TO THE MAIN/ROOT OF YOUR JAQULIN.COM REPOSITORY:
+1. index.html
+2. styles.css
+3. the entire images folder
 
-This package includes selected artwork, artist statements, biography, bronze sculpture section, books/publications, contact information and Fine Funky Art links.
+IMPORTANT: Keep the existing CNAME file in the repository. It connects jaqulin.com to the site.
 
-Website contact email: jaqjos@gmail.com
+After committing the files, wait two to five minutes and refresh jaqulin.com. On an iPhone, close the old browser tab and open a new one if the former design is still cached.
+
+Questions and artwork inquiries on the website go to jaqjos@gmail.com.
