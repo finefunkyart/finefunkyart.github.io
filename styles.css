@@ -33,8 +33,7 @@ img{-webkit-user-drag:none;user-drag:none;-webkit-user-select:none;user-select:n
 .art-mat img[alt="Bottles and Fruit by Jaqulin Joseph"]{opacity:1!important;width:100%!important;height:100%!important;max-width:none!important;max-height:none!important;object-fit:cover!important;object-position:center 47%!important;transform:scale(1.23)!important;transform-origin:center!important;display:block!important}
 @media(max-width:560px){.art-mat img[alt="Bottles and Fruit by Jaqulin Joseph"]{transform:scale(1.23)!important}}
 
-/* They Could Not Take the Crown: preserve the correct image at a crisp, non-upscaled museum size. */
-.museum-card:has(img[alt="They Could Not Take the Crown by Jaqulin Joseph"]) .art-mat{background:#fff;padding:34px;min-height:0}
-.art-mat img[alt="They Could Not Take the Crown by Jaqulin Joseph"]{width:auto!important;max-width:460px!important;height:auto!important;max-height:none!important;object-fit:contain!important;image-rendering:auto!important;transform:none!important}
-@media(max-width:900px){.art-mat img[alt="They Could Not Take the Crown by Jaqulin Joseph"]{max-width:min(460px,100%)!important}}
-@media(max-width:560px){.museum-card:has(img[alt="They Could Not Take the Crown by Jaqulin Joseph"]) .art-mat{padding:18px}.art-mat img[alt="They Could Not Take the Crown by Jaqulin Joseph"]{max-width:100%!important}}
+/* They Could Not Take the Crown: clean image file, no scaling tricks, preserve detail. */
+.museum-card:has(img[alt="They Could Not Take the Crown by Jaqulin Joseph"]) .art-mat{background:#fff;padding:24px;min-height:0}
+.art-mat img[alt="They Could Not Take the Crown by Jaqulin Joseph"]{width:100%!important;height:auto!important;max-width:760px!important;max-height:none!important;object-fit:contain!important;transform:none!important;image-rendering:auto!important}
+@media(max-width:560px){.museum-card:has(img[alt="They Could Not Take the Crown by Jaqulin Joseph"]) .art-mat{padding:14px}.art-mat img[alt="They Could Not Take the Crown by Jaqulin Joseph"]{max-width:100%!important}}
