@@ -1,0 +1,1 @@
+Redeploy GitHub Pages after Bottles and Fruit image update.
