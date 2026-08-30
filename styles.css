@@ -10,3 +10,18 @@
 .books{border-top:1px solid var(--line)}.book-list{display:grid;grid-template-columns:1fr 1fr;gap:25px}.book-list article{padding:30px;border:1px solid var(--line);background:#fff}.book-list h3{margin:0 0 12px;font-family:var(--serif);font-size:1.7rem;font-weight:400}.book-list p{margin:0;color:var(--muted)}.contact{padding:150px 28px;text-align:center;background:var(--rust);color:#fff}.contact .eyebrow{color:#f0c8a8}.contact h2{margin:15px auto 38px;font-size:clamp(3.2rem,7vw,7.2rem)}.contact a{font-family:var(--serif);font-size:clamp(1.4rem,3vw,2.5rem);text-underline-offset:7px}footer{display:flex;justify-content:space-between;gap:20px;padding:25px max(28px,calc((100vw - var(--max))/2));background:#10110f;color:#aaa99f;font-size:.75rem}footer p{margin:0}
 @media(max-width:900px){.site-header{align-items:flex-start;flex-direction:column;gap:10px;padding:14px 20px}.site-header nav{width:100%}.hero{min-height:auto;grid-template-columns:1fr}.hero-copy{padding:78px 24px 60px}.hero-art{padding:24px}.statement,.books{grid-template-columns:1fr;gap:25px;padding:100px 24px}.section-heading{grid-template-columns:55px 1fr;gap:15px;margin-bottom:45px}.collection{padding:95px 24px}.museum-grid{grid-template-columns:1fr;gap:38px}.museum-card.wide-card{grid-column:auto}.purse-preview,.about{grid-template-columns:1fr;gap:50px;padding:100px 24px}.about figure{max-width:650px}.book-list{grid-template-columns:1fr}}
 @media(max-width:560px){.hero h1{font-size:3.45rem}.section-heading h2{font-size:3.5rem}.art-mat{min-height:240px;padding:14px}.museum-card figcaption{min-height:0;padding:22px}.art-pair{grid-template-columns:1fr}.art-pair .art-mat{border-right:0;border-bottom:1px solid var(--line)}.art-pair .art-mat:last-child{border-bottom:0}.purse-preview,.about,.contact{padding-top:80px;padding-bottom:80px}footer{flex-direction:column}}
+
+
+/* Featured gallery statement */
+.museum-card.statement-card{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1.08fr) minmax(360px,.92fr)}
+.statement-card .art-mat{min-height:100%;padding:38px}
+.statement-card .art-mat img{max-height:920px}
+.statement-card figcaption{min-height:0;padding:clamp(34px,4vw,62px);border-top:0;border-left:1px solid var(--line)}
+.statement-card .statement-subtitle{margin:0 0 28px;color:var(--rust);font-family:var(--serif);font-size:1.15rem;font-style:italic}
+.statement-card .wall-copy{max-width:680px}
+.statement-card .wall-copy p{margin:0 0 18px;color:var(--muted);font-size:.98rem;line-height:1.72}
+.statement-card .wall-copy .statement-beat{margin:27px 0 17px;color:var(--ink);font-family:var(--serif);font-size:1.25rem}
+.statement-card .wall-copy .statement-lines{color:var(--ink);font-family:var(--serif);font-size:1.15rem;line-height:1.65}
+.statement-card .wall-copy .statement-close{margin-top:25px;color:var(--rust);font-family:var(--serif);font-size:1.38rem;font-style:italic}
+@media(max-width:900px){.museum-card.statement-card{grid-template-columns:1fr}.statement-card figcaption{border-top:1px solid var(--line);border-left:0}.statement-card .art-mat{padding:24px}}
+@media(max-width:560px){.statement-card .art-mat{padding:14px}.statement-card figcaption{padding:26px 22px}}
