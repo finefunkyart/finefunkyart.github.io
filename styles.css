@@ -25,3 +25,25 @@
 .statement-card .wall-copy .statement-close{margin-top:25px;color:var(--rust);font-family:var(--serif);font-size:1.38rem;font-style:italic}
 @media(max-width:900px){.museum-card.statement-card{grid-template-columns:1fr}.statement-card figcaption{border-top:1px solid var(--line);border-left:0}.statement-card .art-mat{padding:24px}}
 @media(max-width:560px){.statement-card .art-mat{padding:14px}.statement-card figcaption{padding:26px 22px}}
+
+
+/* Site-wide image protection */
+img{
+  -webkit-user-drag:none;
+  user-drag:none;
+  -webkit-user-select:none;
+  user-select:none;
+  -webkit-touch-callout:none;
+}
+.art-mat,.hero-art,.purse-preview figure,.artist-frame,.protected-wrap{
+  position:relative;
+}
+.art-mat::after,.hero-art::after,.purse-preview figure::after,.artist-frame::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:5;
+  background:transparent;
+  -webkit-touch-callout:none;
+  user-select:none;
+}

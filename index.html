@@ -76,6 +76,7 @@
         <figure class="museum-card"><div class="art-mat"><img src="images/photo-red.jpg" alt="Photograph by Jaqulin Joseph" loading="lazy" draggable="false"></div><figcaption><p class="medium">Photography</p><h3>Portrait Study</h3></figcaption></figure>
         <figure class="museum-card"><div class="art-mat"><img src="images/photo-chess.jpg" alt="Photograph by Jaqulin Joseph" loading="lazy" draggable="false"></div><figcaption><p class="medium">Photography · layered image</p><h3>Mind Game</h3></figcaption></figure>
         <figure class="museum-card"><div class="art-mat"><img src="images/photo-performance.jpg" alt="Photograph by Jaqulin Joseph" loading="lazy" draggable="false"></div><figcaption><p class="medium">Photography</p><h3>Performance</h3></figcaption></figure>
+        <figure class="museum-card"><div class="art-mat"><img src="images/photo-angel.jpg" alt="Between Worlds — photograph by Jaqulin Joseph" loading="lazy" draggable="false"></div><figcaption><p class="medium">Photography</p><h3>Between Worlds</h3></figcaption></figure>
         
         <figure class="museum-card wide-card"><div class="art-mat"><img src="images/photo-text.jpg" alt="Photographic collage by Jaqulin Joseph" loading="lazy" draggable="false"></div><figcaption><p class="medium">Photography · collage</p><h3>The Tongue / The Sword</h3></figcaption></figure>
       </div>
@@ -98,11 +99,19 @@
   <footer><p>© <span id="year">2026</span> Jaqulin Joseph</p><p>Original works and images. All rights reserved.</p></footer>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+    const protectedImageArea = 'img, .art-mat, .hero-art, .protected-wrap, .purse-preview figure, .artist-frame';
+    document.querySelectorAll('img').forEach(function(img){
+      img.setAttribute('draggable', 'false');
+      img.setAttribute('oncontextmenu', 'return false;');
+    });
     document.addEventListener('contextmenu', function(e){
-      if(e.target.closest('img, .art-mat, .hero-art, .protected-wrap')) e.preventDefault();
+      if(e.target.closest(protectedImageArea)) e.preventDefault();
     });
     document.addEventListener('dragstart', function(e){
-      if(e.target.tagName === 'IMG') e.preventDefault();
+      if(e.target.closest(protectedImageArea)) e.preventDefault();
+    });
+    document.addEventListener('selectstart', function(e){
+      if(e.target.closest(protectedImageArea)) e.preventDefault();
     });
   </script>
 </body>
