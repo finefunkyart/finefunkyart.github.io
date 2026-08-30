@@ -6,4 +6,4 @@ DO NOT delete the CNAME file if GitHub created one for jaqulin.com.
 
 This package includes selected artwork, artist statements, biography, bronze sculpture section, books/publications, contact information and Fine Funky Art links.
 
-Website contact email: jaqjos@gmail.com
+Website contact email: finefunkyart@gmail.com

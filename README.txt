@@ -11,4 +11,4 @@ IMPORTANT: Keep the existing CNAME file in the repository. It connects jaqulin.c
 
 After committing the files, wait two to five minutes and refresh jaqulin.com. On an iPhone, close the old browser tab and open a new one if the former design is still cached.
 
-Questions and artwork inquiries on the website go to jaqjos@gmail.com.
+Questions and artwork inquiries on the website go to finefunkyart@gmail.com.
