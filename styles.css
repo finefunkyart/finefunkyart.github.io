@@ -38,3 +38,26 @@ img{-webkit-user-drag:none;user-drag:none;-webkit-user-select:none;user-select:n
 .museum-card:has(img[alt="They Could Not Take the Crown by Jaqulin Joseph"]) .art-mat{background:#fff;padding:42px;min-height:0}
 .art-mat img[alt="They Could Not Take the Crown by Jaqulin Joseph"]{width:auto!important;height:auto!important;max-width:min(100%,420px)!important;max-height:720px!important;object-fit:contain!important;transform:none!important;image-rendering:auto!important}
 @media(max-width:560px){.museum-card:has(img[alt="They Could Not Take the Crown by Jaqulin Joseph"]) .art-mat{padding:24px}.art-mat img[alt="They Could Not Take the Crown by Jaqulin Joseph"]{max-width:min(100%,360px)!important}}
+
+/* Bronze sculptures: quiet museum plinth presentation, consistent scale, no awkward stretching. */
+.museum-card:has(img[src$="solo-female.jpg"]) .art-mat,
+.museum-card:has(img[src$="committed-triangle.jpg"]) .art-mat,
+.museum-card:has(img[src$="embrace-women.jpg"]) .art-mat,
+.museum-card:has(img[src$="rooted-essence.jpg"]) .art-mat{background:#f8f6f1;padding:44px 36px;min-height:520px}
+.art-mat img[src$="solo-female.jpg"],
+.art-mat img[src$="committed-triangle.jpg"],
+.art-mat img[src$="embrace-women.jpg"],
+.art-mat img[src$="rooted-essence.jpg"]{width:auto!important;height:auto!important;max-width:78%!important;max-height:460px!important;object-fit:contain!important;filter:drop-shadow(0 18px 18px rgba(40,31,23,.16));margin:auto}
+.museum-card:has(img[src$="solo-female.jpg"]) figcaption,
+.museum-card:has(img[src$="committed-triangle.jpg"]) figcaption,
+.museum-card:has(img[src$="embrace-women.jpg"]) figcaption,
+.museum-card:has(img[src$="rooted-essence.jpg"]) figcaption{background:#fff;padding-top:30px}
+@media(max-width:560px){
+.museum-card:has(img[src$="solo-female.jpg"]) .art-mat,
+.museum-card:has(img[src$="committed-triangle.jpg"]) .art-mat,
+.museum-card:has(img[src$="embrace-women.jpg"]) .art-mat,
+.museum-card:has(img[src$="rooted-essence.jpg"]) .art-mat{padding:28px 22px;min-height:390px}
+.art-mat img[src$="solo-female.jpg"],
+.art-mat img[src$="committed-triangle.jpg"],
+.art-mat img[src$="embrace-women.jpg"],
+.art-mat img[src$="rooted-essence.jpg"]{max-width:84%!important;max-height:350px!important}}
