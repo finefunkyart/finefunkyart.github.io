@@ -61,3 +61,13 @@ img{-webkit-user-drag:none;user-drag:none;-webkit-user-select:none;user-select:n
 .art-mat img[src$="committed-triangle.jpg"],
 .art-mat img[src$="embrace-women.jpg"],
 .art-mat img[src$="rooted-essence.jpg"]{max-width:84%!important;max-height:350px!important}}
+
+
+/* Artwork protection */
+.art-mat,.hero-art,.purse-preview figure,.artist-frame{position:relative}
+.art-mat img,.hero-art img,.purse-preview figure img,.artist-frame img{pointer-events:none;-webkit-user-drag:none;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}
+.art-mat::after,.hero-art::after,.purse-preview figure::after,.artist-frame::after{content:"© Jaqulin Joseph";position:absolute;right:12px;bottom:12px;z-index:4;padding:3px 7px;background:rgba(10,10,8,.58);color:rgba(255,255,255,.9);font:500 .63rem/1.2 var(--sans);letter-spacing:.06em;pointer-events:none}
+.hero-art::after{right:54px;bottom:72px}
+.purse-preview figure::after,.artist-frame::after{right:30px;bottom:42px}
+@media(max-width:900px){.hero-art::after{right:36px;bottom:54px}}
+@media print{.art-mat img,.hero-art img,.purse-preview figure img,.artist-frame img{visibility:hidden!important}.art-mat::before,.hero-art::before,.purse-preview figure::before,.artist-frame::before{content:"Artwork © Jaqulin Joseph — reproduction prohibited";display:flex;align-items:center;justify-content:center;position:absolute;inset:0;padding:30px;text-align:center;background:#f4f1e9;color:#171713;font:500 1rem/1.5 var(--sans)}}
