@@ -67,3 +67,8 @@ img{-webkit-user-drag:none;user-drag:none;-webkit-user-select:none;user-select:n
 .art-mat,.hero-art,.purse-preview figure,.artist-frame{position:relative}
 .art-mat img,.hero-art img,.purse-preview figure img,.artist-frame img{pointer-events:none;-webkit-user-drag:none;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}
 @media print{.art-mat img,.hero-art img,.purse-preview figure img,.artist-frame img{visibility:hidden!important}.art-mat::before,.hero-art::before,.purse-preview figure::before,.artist-frame::before{content:"Artwork © Jaqulin Joseph — reproduction prohibited";display:flex;align-items:center;justify-content:center;position:absolute;inset:0;padding:30px;text-align:center;background:#f4f1e9;color:#171713;font:500 1rem/1.5 var(--sans)}}
+
+/* Solar Push: clean white museum presentation */
+.solar-push-card .art-mat{background:#fff;padding:32px}
+.solar-push-card .art-mat img{width:100%;height:auto;max-height:760px;object-fit:contain;object-position:center;filter:none}
+@media(max-width:560px){.solar-push-card .art-mat{padding:16px}}
