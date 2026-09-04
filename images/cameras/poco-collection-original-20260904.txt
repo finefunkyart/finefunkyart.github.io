@@ -1,0 +1,1 @@
+POCO full-frame web image from user-supplied photograph, resized only; no generative edits.
