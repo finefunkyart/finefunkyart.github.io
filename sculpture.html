@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Bronze sculpture by New Orleans artist Jaqulin Joseph.">
+<title>Sculpture — Jaqulin Joseph</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Libre+Caslon+Display&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css">
+<style>
+.sculpture-page{background:#d8cfc0;color:#171713}.sculpture-page .site-header{background:rgba(216,207,192,.96)}.sculpture-hero{max-width:1180px;margin:auto;padding:95px 28px 58px}.sculpture-hero h1{margin:12px 0 22px;font:400 clamp(4rem,9vw,8rem)/.95 var(--serif);letter-spacing:-.04em}.sculpture-hero p:last-child{max-width:690px;color:#5e584e;font-size:1.05rem}.sculpture-gallery{max-width:1180px;margin:auto;padding:0 28px 110px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:34px}.sculpture-gallery figure{margin:0;background:#fff;border:1px solid #c5bcac}.sculpture-gallery img{width:100%;height:560px;object-fit:contain;padding:30px;background:#f8f6f1}.sculpture-gallery figcaption{padding:26px 27px 30px;border-top:1px solid #d7d1c4}.sculpture-gallery h2{margin:0 0 12px;font:400 clamp(1.8rem,2.7vw,2.5rem)/1.05 var(--serif)}.sculpture-gallery p{margin:0;color:#625f57}.sculpture-note{max-width:1180px;margin:-65px auto 95px;padding:0 28px;color:#6d675d;font-size:.83rem}.sculpture-page footer{background:#10110f}@media(max-width:900px){.sculpture-gallery{grid-template-columns:1fr 1fr}.sculpture-gallery img{height:500px}}@media(max-width:600px){.sculpture-gallery{grid-template-columns:1fr}.sculpture-gallery img{height:430px}.sculpture-hero{padding-top:70px}}
+</style>
+</head>
+<body class="sculpture-page">
+<header class="site-header"><a class="wordmark" href="index.html">Jaqulin Joseph</a><button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button><nav id="site-nav" aria-label="Primary navigation"><a href="index.html#selected">Paintings</a><a href="sculpture.html" aria-current="page">Sculpture</a><a href="photography.html">Photography</a><a href="cameras.html">Cameras</a><a href="index.html#about">About</a><a href="index.html#contact">Contact</a></nav></header>
+<main>
+<section class="sculpture-hero"><p class="eyebrow">Bronze sculpture</p><h1>Form, weight, presence.</h1><p>Jaqulin Joseph's bronze works explore independence, intimacy, tension, and the human figure through compact, enduring forms. Each sculpture is presented as its own body of work, separate from the painting and mixed-media collection.</p></section>
+<section class="sculpture-gallery" aria-label="Selected bronze sculpture">
+<figure><img src="images/solo-female-clean.jpg?v=20260905" alt="Solo Female bronze sculpture by Jaqulin Joseph"><figcaption><p class="medium">Bronze</p><h2>Solo Female</h2><p>Vulnerability, independence, and quiet resolve.</p></figcaption></figure>
+<figure><img src="images/committed-triangle-clean.jpg?v=20260905" alt="Committed to the Triangle bronze sculpture by Jaqulin Joseph"><figcaption><p class="medium">Bronze</p><h2>Committed to the Triangle</h2><p>Balance and tension gather into upward movement.</p></figcaption></figure>
+<figure><img src="images/embrace-women-clean.jpg?v=20260905" alt="Embrace of the Woman bronze sculpture by Jaqulin Joseph"><figcaption><p class="medium">Bronze</p><h2>Embrace of the Woman</h2><p>Intertwined forms become protection, recognition, and strength.</p></figcaption></figure>
+</section>
+<p class="sculpture-note">Additional dimensions, edition information, availability, and exhibition details are supplied with serious inquiries.</p>
+</main>
+<footer><p>© <span id="year">2026</span> Jaqulin Joseph</p><p><a href="index.html">Paintings</a> · <a href="photography.html">Photography</a> · <a href="cameras.html">Vintage Cameras</a></p></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();const b=document.querySelector('.menu-button'),n=document.getElementById('site-nav');b.addEventListener('click',()=>{const o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!o));n.classList.toggle('open',!o)});n.addEventListener('click',()=>{b.setAttribute('aria-expanded','false');n.classList.remove('open')});document.querySelectorAll('img').forEach(i=>{i.draggable=false;i.addEventListener('contextmenu',e=>e.preventDefault())});</script>
+</body></html>
