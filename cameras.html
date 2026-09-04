@@ -11,38 +11,14 @@
 <link rel="stylesheet" href="styles.css">
 <style>
 :root{--paper:#f7f4ed;--ink:#191815;--muted:#6c675e;--line:#d8d0c3;--gold:#9b7433;--dark:#141310}
-body.camera-page{background:var(--paper);color:var(--ink)}
-.camera-page .site-header{background:rgba(247,244,237,.97)}
-.camera-hero{max-width:1240px;margin:auto;padding:82px 28px 34px;text-align:center}
-.camera-hero .eyebrow{color:var(--gold)}
-.camera-hero h1{margin:.08em 0 .18em;font:400 clamp(3.8rem,8vw,7.4rem)/.95 "Libre Caslon Display",Georgia,serif;letter-spacing:-.045em}
-.camera-hero .intro{max-width:760px;margin:0 auto;color:var(--muted);font-size:1.08rem}
-.hero-frame{max-width:1240px;margin:20px auto 86px;padding:20px;background:#fff;border:1px solid var(--line);box-shadow:0 18px 55px rgba(0,0,0,.07)}
-.hero-frame img{display:block;width:100%;height:auto;background:#fff}
-.hero-frame figcaption{padding:13px 4px 0;color:#777168;font-size:.78rem}
-.collection-title{max-width:1120px;margin:auto;padding:0 28px 28px;border-bottom:1px solid var(--line)}
-.collection-title .eyebrow{color:var(--gold)}
-.collection-title h2{margin:0 0 12px;font:400 clamp(2.8rem,6vw,5.2rem)/1 "Libre Caslon Display",Georgia,serif}
-.collection-title p:last-child{max-width:720px;color:var(--muted)}
-.catalog{max-width:1120px;margin:auto;padding:12px 28px 110px}
-.entry{display:grid;grid-template-columns:120px minmax(0,1fr) 215px;gap:32px;align-items:start;padding:48px 0;border-bottom:1px solid var(--line)}
-.no{color:var(--gold);font-size:.68rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase}
-.entry h3{margin:0 0 7px;font:400 clamp(2rem,4vw,3.3rem)/1.02 "Libre Caslon Display",Georgia,serif}
-.type{margin:0 0 18px;color:var(--gold);font-size:.72rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase}
-.entry p{max-width:650px;margin:0;color:var(--muted)}
-.inquire{display:inline-block;padding:14px 16px;border:1px solid var(--gold);text-decoration:none;text-align:center;font-size:.68rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase}
-.inquire:hover{background:var(--dark);color:#fff;border-color:var(--dark)}
-.collection-foot{max-width:1120px;margin:-55px auto 95px;padding:0 28px;color:#817b71;font-size:.8rem}
-.camera-page footer{background:var(--dark)}
-@media(max-width:800px){.entry{grid-template-columns:1fr;gap:13px}.entry .inquire{width:max-content}.hero-frame{margin-left:18px;margin-right:18px}}
-@media(max-width:520px){.camera-hero{padding-top:62px}.camera-hero h1{font-size:3.6rem}.catalog,.collection-title{padding-left:20px;padding-right:20px}}
+body.camera-page{background:var(--paper);color:var(--ink)}.camera-page .site-header{background:rgba(247,244,237,.97)}.camera-hero{max-width:1240px;margin:auto;padding:82px 28px 34px;text-align:center}.camera-hero .eyebrow{color:var(--gold)}.camera-hero h1{margin:.08em 0 .18em;font:400 clamp(3.8rem,8vw,7.4rem)/.95 "Libre Caslon Display",Georgia,serif;letter-spacing:-.045em}.camera-hero .intro{max-width:760px;margin:0 auto;color:var(--muted);font-size:1.08rem}.hero-frame{max-width:1240px;margin:20px auto 86px;padding:20px;background:#fff;border:1px solid var(--line);box-shadow:0 18px 55px rgba(0,0,0,.07)}.hero-frame img{display:block;width:100%;height:auto;background:#fff}.hero-frame figcaption{padding:13px 4px 0;color:#777168;font-size:.78rem}.collection-title{max-width:1120px;margin:auto;padding:0 28px 28px;border-bottom:1px solid var(--line)}.collection-title .eyebrow{color:var(--gold)}.collection-title h2{margin:0 0 12px;font:400 clamp(2.8rem,6vw,5.2rem)/1 "Libre Caslon Display",Georgia,serif}.collection-title p:last-child{max-width:720px;color:var(--muted)}.catalog{max-width:1120px;margin:auto;padding:12px 28px 110px}.entry{display:grid;grid-template-columns:120px minmax(0,1fr) 215px;gap:32px;align-items:start;padding:48px 0;border-bottom:1px solid var(--line)}.no{color:var(--gold);font-size:.68rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase}.entry h3{margin:0 0 7px;font:400 clamp(2rem,4vw,3.3rem)/1.02 "Libre Caslon Display",Georgia,serif}.type{margin:0 0 18px;color:var(--gold);font-size:.72rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase}.entry p{max-width:650px;margin:0;color:var(--muted)}.inquire{display:inline-block;padding:14px 16px;border:1px solid var(--gold);text-decoration:none;text-align:center;font-size:.68rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase}.inquire:hover{background:var(--dark);color:#fff;border-color:var(--dark)}.collection-foot{max-width:1120px;margin:-55px auto 95px;padding:0 28px;color:#817b71;font-size:.8rem}.camera-page footer{background:var(--dark)}@media(max-width:800px){.entry{grid-template-columns:1fr;gap:13px}.entry .inquire{width:max-content}.hero-frame{margin-left:18px;margin-right:18px}}@media(max-width:520px){.camera-hero{padding-top:62px}.camera-hero h1{font-size:3.6rem}.catalog,.collection-title{padding-left:20px;padding-right:20px}}
 </style>
 </head>
 <body class="camera-page">
-<header class="site-header"><a class="wordmark" href="index.html">Jaqulin Joseph</a><button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button><nav id="site-nav" aria-label="Primary navigation"><a href="index.html#selected">Selected work</a><a href="index.html#sculpture">Sculpture</a><a href="photography.html">Photography</a><a href="cameras.html" aria-current="page">Cameras</a><a href="index.html#about">About</a><a href="index.html#contact">Contact</a></nav></header>
+<header class="site-header"><a class="wordmark" href="index.html">Jaqulin Joseph</a><button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button><nav id="site-nav" aria-label="Primary navigation"><a href="index.html#selected">Paintings</a><a href="sculpture.html">Sculpture</a><a href="photography.html">Photography</a><a href="cameras.html" aria-current="page">Cameras</a><a href="index.html#about">About</a><a href="index.html#contact">Contact</a></nav></header>
 <main>
 <section class="camera-hero"><p class="eyebrow">Private collection · photographic history</p><h1>Vintage Cameras</h1><p class="intro">A small museum of machines that once held light. These cameras trace more than a century of changing materials, mechanics, portability, and the desire to preserve a moment.</p></section>
-<figure class="hero-frame"><img src="images/cameras/collection-overview.svg?v=20260904b" alt="Selected vintage cameras from Jaqulin Joseph's collection"><figcaption>Selected objects from the Jaqulin Joseph Vintage Camera Collection.</figcaption></figure>
+<figure class="hero-frame"><img src="images/cameras/collection-overview.svg?v=20260905" alt="Selected vintage cameras from Jaqulin Joseph's collection"><figcaption>Selected objects from the Jaqulin Joseph Vintage Camera Collection.</figcaption></figure>
 <section class="collection-title"><p class="eyebrow">Collection catalog</p><h2>Objects & histories</h2><p>Each camera is presented as an object of photographic history. Additional photographs, condition details, and availability are supplied on request.</p></section>
 <section class="catalog">
 <article class="entry"><div class="no">Collection 01</div><div><h3>Rochester Premo B</h3><p class="type">Large-format folding camera · c. 1890s–early 1900s</p><p>Built by the Rochester Optical Company in Rochester, New York, the Premo family belongs to the early age of portable large-format photography. Its wooden body, bellows, and metal fittings reflect a period when the camera was both precision instrument and finely made object.</p></div><a class="inquire" href="mailto:finefunkyart@gmail.com?subject=Inquiry%20about%20Rochester%20Premo%20B">Inquire about this camera →</a></article>
@@ -52,9 +28,8 @@ body.camera-page{background:var(--paper);color:var(--ink)}
 <article class="entry"><div class="no">Collection 05</div><div><h3>Kodak Brownie Reflex Synchro</h3><p class="type">Roll-film reflex-style camera · mid-20th century</p><p>The Brownie Reflex Synchro paired a large brilliant finder with simple controls, continuing Kodak’s effort to make picture-taking accessible to everyday families.</p></div><a class="inquire" href="mailto:finefunkyart@gmail.com?subject=Inquiry%20about%20Kodak%20Brownie%20Reflex%20Synchro">Inquire about this camera →</a></article>
 <article class="entry"><div class="no">Collection 06</div><div><h3>Herco Imperial 620</h3><p class="type">Snapshot box camera · mid-20th century</p><p>An affordable 620-film snapshot camera built around simplicity: point, frame, and make the exposure. Its bold faceplate gives it unmistakable period character.</p></div><a class="inquire" href="mailto:finefunkyart@gmail.com?subject=Inquiry%20about%20Herco%20Imperial%20620">Inquire about this camera →</a></article>
 <article class="entry"><div class="no">Collection 07</div><div><h3>Kodak Brownie Bullet</h3><p class="type">Roll-film camera · postwar era</p><p>A compact Brownie snapshot camera whose molded body and simple operation reflect the democratization of casual photography in the postwar years.</p></div><a class="inquire" href="mailto:finefunkyart@gmail.com?subject=Inquiry%20about%20Kodak%20Brownie%20Bullet">Inquire about this camera →</a></article>
-</section>
-<p class="collection-foot">Dates and identifying details are presented as collection notes and may be refined as individual serial numbers, lenses, shutters, and variants are documented.</p>
+</section><p class="collection-foot">Dates and identifying details are presented as collection notes and may be refined as individual serial numbers, lenses, shutters, and variants are documented.</p>
 </main>
-<footer><p>© <span id="year">2026</span> Jaqulin Joseph</p><p><a href="index.html">Art portfolio</a> · <a href="photography.html">Photography</a> · <a href="https://villageofus.com" target="_blank" rel="noopener">Village of Us ↗</a></p></footer>
+<footer><p>© <span id="year">2026</span> Jaqulin Joseph</p><p><a href="index.html">Paintings</a> · <a href="sculpture.html">Sculpture</a> · <a href="photography.html">Photography</a> · <a href="https://villageofus.com" target="_blank" rel="noopener">Village of Us ↗</a></p></footer>
 <script>document.getElementById('year').textContent=new Date().getFullYear();const b=document.querySelector('.menu-button'),n=document.getElementById('site-nav');b.addEventListener('click',()=>{const o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!o));n.classList.toggle('open',!o)});n.addEventListener('click',()=>{b.setAttribute('aria-expanded','false');n.classList.remove('open')});</script>
 </body></html>
