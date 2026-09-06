@@ -1,0 +1,1 @@
+Museum-quality camera assets are being prepared for the camera collection page.
