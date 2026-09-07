@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=20260906-camera-refresh">
+<link rel="stylesheet" href="styles.css?v=20260906-nav">
 <style>
 :root{--paper:#f7f4ed;--ink:#191815;--muted:#6c675e;--line:#d8d0c3;--gold:#9b7433;--dark:#141310}
 body.camera-page{background:var(--paper);color:var(--ink)}
@@ -34,7 +34,7 @@ body.camera-page{background:var(--paper);color:var(--ink)}
 <header class="site-header">
 <a class="wordmark" href="index.html">Jaqulin Joseph</a>
 <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
-<nav id="site-nav" aria-label="Primary navigation"><a href="index.html#selected">Paintings</a><a href="sculpture.html">Sculpture</a><a href="photography.html">Photography</a><a href="cameras.html" aria-current="page">Cameras</a><a href="about.html">About</a><a href="index.html#contact">Contact</a></nav>
+<nav id="site-nav" aria-label="Primary navigation"><a href="index.html#selected">Paintings</a><a href="sculpture.html">Sculpture</a><a href="photography.html">Photography</a><details class="nav-more"><summary>More</summary><div class="nav-more-menu"><a href="cameras.html" aria-current="page">Cameras</a><a href="books.html">Books</a><a href="coloring.html">Free Coloring Pages</a></div></details><a href="about.html">About</a><a href="index.html#contact">Contact</a></nav>
 </header>
 <main>
 <section class="camera-hero"><p class="eyebrow">Private collection · photographic history</p><h1>Vintage Cameras</h1><p class="intro">A small museum of machines that once held light. These refreshed photographs keep the cameras large, clean, and easy to study without losing the age written into their surfaces.</p></section>
@@ -50,7 +50,7 @@ body.camera-page{background:var(--paper);color:var(--ink)}
 <footer><p>© <span id="year">2026</span> Jaqulin Joseph</p><p><a href="index.html">Paintings</a> · <a href="sculpture.html">Sculpture</a> · <a href="photography.html">Photography</a> · <a href="https://villageofus.com" target="_blank" rel="noopener">Village of Us ↗</a></p></footer>
 <script>
 document.getElementById('year').textContent=new Date().getFullYear();
-const b=document.querySelector('.menu-button'),n=document.getElementById('site-nav');b.addEventListener('click',()=>{const o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!o));n.classList.toggle('open',!o)});n.addEventListener('click',()=>{b.setAttribute('aria-expanded','false');n.classList.remove('open')});
+const b=document.querySelector('.menu-button'),n=document.getElementById('site-nav');b.addEventListener('click',()=>{const o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!o));n.classList.toggle('open',!o)});n.addEventListener('click',e=>{if(e.target.closest('a')){b.setAttribute('aria-expanded','false');n.classList.remove('open')}});
 (async()=>{const img=document.getElementById('polaroid-swinger-model-20-img');if(!img)return;try{const parts=await Promise.all([1,2,3,4,5,6].map(i=>fetch('images/cameras/polaroid-swinger-model-20.b64.'+i+'?v=20260906-refresh2').then(r=>{if(!r.ok)throw new Error('part '+i);return r.text()})));img.src='data:image/jpeg;base64,'+parts.join('')}catch(e){console.error(e)}})();
 </script>
 </body>
