@@ -1,0 +1,31 @@
+name: Cache bust full Kodak Bullet photo
+on:
+  push:
+    paths:
+      - '.github/workflows/cache-bust-kodak-bullet-full-20260907.yml'
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Force fresh Kodak Bullet image URL
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('cameras.html')
+          s=p.read_text()
+          old='images/cameras/brownie-bullet.jpg?v=20260907-bullet-working'
+          new='images/cameras/brownie-bullet.jpg?v=20260907-bullet-full-1647'
+          if old not in s:
+              raise SystemExit('Expected old Kodak Bullet URL not found')
+          p.write_text(s.replace(old,new,1))
+          PY
+      - name: Commit cache-busting URL
+        run: |
+          git config user.name 'Jaqulin'
+          git config user.email 'jaqjos@gmail.com'
+          git add cameras.html
+          git commit -m 'Force fresh full Kodak Bullet photo' || exit 0
+          git push
