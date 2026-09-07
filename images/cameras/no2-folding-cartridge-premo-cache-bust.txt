@@ -1,0 +1,1 @@
+Fresh asset path will be used to avoid stale browser/CDN cache for Collection 02.
