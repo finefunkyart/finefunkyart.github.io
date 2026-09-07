@@ -1,0 +1,1 @@
+Site audit completed 2026-09-07. Verified published page references and assets for index, cameras, books, coloring, sculpture, photography, about, and single-mothers preview. Added fresh commit to trigger a full GitHub Pages redeploy.
