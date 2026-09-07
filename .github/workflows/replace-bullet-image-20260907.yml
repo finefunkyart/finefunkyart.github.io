@@ -1,0 +1,32 @@
+name: Replace broken Kodak Bullet image
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/replace-bullet-image-20260907.yml'
+permissions:
+  contents: write
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Replace broken Bullet asset reference
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('cameras.html')
+          s = p.read_text()
+          old = 'images/cameras/kodak-bullet-museum-20260907.jpg?v=20260907-bullet-final-2'
+          new = 'images/cameras/brownie-bullet.jpg?v=20260907-bullet-working'
+          if old not in s:
+              raise SystemExit('Old Bullet reference not found')
+          p.write_text(s.replace(old, new, 1))
+          PY
+      - name: Commit fix
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add cameras.html
+          git commit -m 'Use working Eastman Kodak Bullet image' || exit 0
+          git push
