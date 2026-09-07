@@ -4,17 +4,17 @@
 .camera-page .catalog .entry:nth-of-type(2) .camera-gallery img{display:none!important;}
 .camera-page .catalog .entry:nth-of-type(2) .camera-gallery img:nth-child(3){display:block!important;width:100%!important;height:360px!important;object-fit:contain!important;object-position:center!important;background:#fff!important;}
 
-/* Eastman Kodak Bullet: use the museum-ready photograph supplied on 2026-09-07. */
-.camera-page .catalog .entry:nth-of-type(5) .camera-photo{
-  background:#fff url("images/cameras/kodak-bullet-museum-20260907.jpg?v=20260907") center/contain no-repeat!important;
-}
-.camera-page .catalog .entry:nth-of-type(5) .camera-photo img{visibility:hidden!important;}
+/* Eastman Kodak Bullet: use the actual image in the page instead of the broken background-image override. */
+.camera-page .catalog .entry:nth-of-type(5) .camera-photo{background:#fff!important;}
+.camera-page .catalog .entry:nth-of-type(5) .camera-photo img{display:block!important;visibility:visible!important;opacity:1!important;width:100%!important;height:360px!important;object-fit:contain!important;object-position:center!important;}
 
-/* Kodak Six-16 Senior: do not enlarge or filter the current low-resolution source. */
-.camera-page .catalog .entry:nth-of-type(6) .camera-photo{display:flex!important;align-items:center!important;justify-content:center!important;min-height:330px!important;background:#fff!important;}
-.camera-page .catalog .entry:nth-of-type(6) .camera-photo img{width:auto!important;height:auto!important;max-width:260px!important;max-height:280px!important;margin:auto!important;object-fit:contain!important;filter:none!important;}
+/* Kodak Six-16 Senior: make the camera large enough to see clearly in the museum frame. */
+.camera-page .catalog .entry:nth-of-type(6) .camera-photo{display:flex!important;align-items:center!important;justify-content:center!important;min-height:390px!important;background:#fff!important;}
+.camera-page .catalog .entry:nth-of-type(6) .camera-photo img{display:block!important;width:100%!important;height:360px!important;max-width:none!important;max-height:none!important;margin:auto!important;object-fit:contain!important;object-position:center!important;filter:none!important;transform:scale(1.35);}
 
 @media(max-width:520px){
   .camera-page .catalog .entry:nth-of-type(2) .camera-gallery img:nth-child(3){height:300px!important;}
-  .camera-page .catalog .entry:nth-of-type(6) .camera-photo img{max-width:230px!important;max-height:250px!important;}
+  .camera-page .catalog .entry:nth-of-type(5) .camera-photo img{height:300px!important;}
+  .camera-page .catalog .entry:nth-of-type(6) .camera-photo{min-height:320px!important;}
+  .camera-page .catalog .entry:nth-of-type(6) .camera-photo img{height:300px!important;transform:scale(1.25);}
 }
