@@ -1,20 +1,20 @@
 /* Camera page repair — 2026-09-07 */
-/* No. 2 Folding Cartridge Premo: show one strong detail image instead of a crowded five-image gallery. */
-.camera-page .catalog .entry:nth-of-type(2) .camera-gallery{display:block!important;max-width:520px;background:#fff;}
-.camera-page .catalog .entry:nth-of-type(2) .camera-gallery img{display:none!important;}
-.camera-page .catalog .entry:nth-of-type(2) .camera-gallery img:nth-child(3){display:block!important;width:100%!important;height:360px!important;object-fit:contain!important;object-position:center!important;background:#fff!important;}
+/* No. 2 Folding Cartridge Premo is now collection entry 3 after adding the POCO. */
+.camera-page .catalog .entry:nth-of-type(3) .camera-gallery{display:block!important;max-width:520px;background:#fff;}
+.camera-page .catalog .entry:nth-of-type(3) .camera-gallery img{display:none!important;}
+.camera-page .catalog .entry:nth-of-type(3) .camera-gallery img:nth-child(3){display:block!important;width:100%!important;height:360px!important;object-fit:contain!important;object-position:center!important;background:#fff!important;}
 
-/* Eastman Kodak Bullet: use the actual image in the page instead of the broken background-image override. */
-.camera-page .catalog .entry:nth-of-type(5) .camera-photo{background:#fff!important;}
-.camera-page .catalog .entry:nth-of-type(5) .camera-photo img{display:block!important;visibility:visible!important;opacity:1!important;width:100%!important;height:360px!important;object-fit:contain!important;object-position:center!important;}
+/* Eastman Kodak Bullet is now entry 6. */
+.camera-page .catalog .entry:nth-of-type(6) .camera-photo{background:#fff!important;}
+.camera-page .catalog .entry:nth-of-type(6) .camera-photo img{display:block!important;visibility:visible!important;opacity:1!important;width:100%!important;height:360px!important;object-fit:contain!important;object-position:center!important;}
 
-/* Kodak Six-16 Senior: make the camera large enough to see clearly in the museum frame. */
-.camera-page .catalog .entry:nth-of-type(6) .camera-photo{display:flex!important;align-items:center!important;justify-content:center!important;min-height:390px!important;background:#fff!important;}
-.camera-page .catalog .entry:nth-of-type(6) .camera-photo img{display:block!important;width:100%!important;height:360px!important;max-width:none!important;max-height:none!important;margin:auto!important;object-fit:contain!important;object-position:center!important;filter:none!important;transform:scale(1.35);}
+/* Kodak Six-16 Senior is now entry 7. */
+.camera-page .catalog .entry:nth-of-type(7) .camera-photo{display:flex!important;align-items:center!important;justify-content:center!important;min-height:390px!important;background:#fff!important;}
+.camera-page .catalog .entry:nth-of-type(7) .camera-photo img{display:block!important;width:100%!important;height:360px!important;max-width:none!important;max-height:none!important;margin:auto!important;object-fit:contain!important;object-position:center!important;filter:none!important;transform:scale(1.35);}
 
 @media(max-width:520px){
-  .camera-page .catalog .entry:nth-of-type(2) .camera-gallery img:nth-child(3){height:300px!important;}
-  .camera-page .catalog .entry:nth-of-type(5) .camera-photo img{height:300px!important;}
-  .camera-page .catalog .entry:nth-of-type(6) .camera-photo{min-height:320px!important;}
-  .camera-page .catalog .entry:nth-of-type(6) .camera-photo img{height:300px!important;transform:scale(1.25);}
+  .camera-page .catalog .entry:nth-of-type(3) .camera-gallery img:nth-child(3){height:300px!important;}
+  .camera-page .catalog .entry:nth-of-type(6) .camera-photo img{height:300px!important;}
+  .camera-page .catalog .entry:nth-of-type(7) .camera-photo{min-height:320px!important;}
+  .camera-page .catalog .entry:nth-of-type(7) .camera-photo img{height:300px!important;transform:scale(1.25);}
 }
