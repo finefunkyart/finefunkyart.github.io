@@ -1,4 +1,4 @@
-name: Fix Kodak Bullet camera image
+name: Refresh Kodak Bullet camera image
 on:
   push:
     branches: [main]
@@ -10,21 +10,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Replace Bullet image and refresh camera cache
+      - name: Refresh Bullet image URL
         run: |
           python - <<'PY'
           from pathlib import Path
           p = Path('cameras.html')
           s = p.read_text()
-          s = s.replace('images/cameras/brownie-bullet.jpg?v=20260907-1350', 'images/cameras/kodak-bullet-museum-20260907.jpg?v=20260907-bullet-clean')
-          s = s.replace('styles.css?v=20260907-camera-poco', 'styles.css?v=20260907-bullet-clean')
+          s = s.replace('images/cameras/kodak-bullet-museum-20260907.jpg?v=20260907-bullet-clean', 'images/cameras/kodak-bullet-museum-20260907.jpg?v=20260907-bullet-final-2')
           p.write_text(s)
           PY
-      - name: Commit fix
+      - name: Commit refresh
         run: |
           git config user.name "Jaqulin Site Fix"
           git config user.email "actions@users.noreply.github.com"
           git add cameras.html
           if git diff --cached --quiet; then exit 0; fi
-          git commit -m "Use clean Kodak Bullet image"
+          git commit -m "Refresh Kodak Bullet image cache"
           git push
