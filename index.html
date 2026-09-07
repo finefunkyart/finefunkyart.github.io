@@ -10,21 +10,35 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <style>
+    .nav-more{position:relative}
+    .nav-more summary{list-style:none;cursor:pointer;color:#45433d;font:.7rem/1 var(--sans);font-weight:600;letter-spacing:.11em;text-transform:uppercase}
+    .nav-more summary::-webkit-details-marker{display:none}
+    .nav-more summary::after{content:" +";color:var(--rust)}
+    .nav-more[open] summary::after{content:" −"}
+    .nav-more-menu{position:absolute;right:0;top:calc(100% + 14px);min-width:220px;padding:8px 14px;background:var(--paper);border:1px solid var(--line);box-shadow:0 14px 34px rgba(0,0,0,.08)}
+    .nav-more-menu a{display:block;white-space:nowrap;padding:11px 0}
+    @media(max-width:900px){.nav-more{width:100%}.nav-more summary{width:100%;padding:13px 0;border-top:1px solid var(--line)}.nav-more-menu{position:static;min-width:0;padding:0 0 4px 18px;border:0;box-shadow:none;background:transparent}.nav-more-menu a{padding:11px 0}}
+  </style>
 </head>
 <body>
 <header class="site-header">
   <a class="wordmark" href="#top">Jaqulin Joseph</a>
   <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
-  <nav id="site-nav">
+  <nav id="site-nav" aria-label="Primary navigation">
     <a href="#selected">Paintings</a>
     <a href="sculpture.html">Sculpture</a>
     <a href="photography.html">Photography</a>
-    <a href="cameras.html">Cameras</a>
-    <a href="books.html">Books</a>
-    <a href="coloring.html">Free Coloring Pages</a>
+    <details class="nav-more">
+      <summary>More</summary>
+      <div class="nav-more-menu">
+        <a href="cameras.html">Cameras</a>
+        <a href="books.html">Books</a>
+        <a href="coloring.html">Free Coloring Pages</a>
+      </div>
+    </details>
     <a href="about.html">About</a>
     <a href="#contact">Contact</a>
-    <a href="https://finefunkyart.com" target="_blank" rel="noopener">Fine Funky Art ↗</a>
   </nav>
 </header>
 
@@ -149,7 +163,7 @@
 document.getElementById('year').textContent=new Date().getFullYear();
 const b=document.querySelector('.menu-button'),n=document.getElementById('site-nav');
 b.addEventListener('click',()=>{const o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!o));n.classList.toggle('open',!o)});
-n.addEventListener('click',()=>{b.setAttribute('aria-expanded','false');n.classList.remove('open')});
+n.addEventListener('click',e=>{if(e.target.closest('a')){b.setAttribute('aria-expanded','false');n.classList.remove('open')}});
 document.querySelectorAll('img').forEach(i=>{i.draggable=false;i.addEventListener('contextmenu',e=>e.preventDefault())});
 </script>
 </body>
