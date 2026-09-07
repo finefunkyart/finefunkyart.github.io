@@ -1,0 +1,53 @@
+name: Add Zeiss Ikon folding camera
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/add-zeiss-folding-20260907.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build image and update camera catalog
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import base64, re
+
+          root = Path('.')
+          parts = [root / f'images/cameras/zeiss-folding-20260907.b64.{i}' for i in range(1,5)]
+          data = ''.join(p.read_text().strip() for p in parts)
+          out = root / 'images/cameras/zeiss-ikon-folding-camera-20260907.jpg'
+          out.write_bytes(base64.b64decode(data))
+
+          page = root / 'cameras.html'
+          html = page.read_text()
+          if 'zeiss-ikon-folding-camera-20260907.jpg' not in html:
+              def bump(m):
+                  n = int(m.group(1))
+                  return f'Collection {n+1:02d}' if n >= 4 else m.group(0)
+              html = re.sub(r'Collection (\d{2})', bump, html)
+
+              marker = '<article class="entry"><div class="visual"><figure class="camera-photo"><img src="images/cameras/cine-kodak-eight-model-20.jpg'
+              pos = html.index(marker)
+              article = '''<article class="entry"><div class="visual"><figure class="camera-photo"><img src="images/cameras/zeiss-ikon-folding-camera-20260907.jpg?v=20260907-1652" alt="Zeiss Ikon folding camera with Klio shutter and Contessa-Nettel Nettel-Anastigmat lens" /></figure><span class="date-chip">c. late 1920s–early 1930s</span></div><div class="entry-copy"><div class="no">Collection 04</div><h3>Zeiss Ikon Folding Camera</h3><p class="type">Folding camera · Zeiss Ikon · Germany · c. late 1920s–early 1930s</p><p>Zeiss Ikon was established in 1926, bringing several important German camera-making traditions together under one name. This example carries a Contessa-Nettel-marked Nettel-Anastigmat lens and a Klio shutter, preserving the lineage of one of the companies that became part of the Zeiss Ikon story.</p><p>Its collapsible bellows, folding bed, leatherette body and engraved metal fittings belong to the interwar era when capable cameras were becoming compact enough to travel. The surviving wear and original markings make this piece both a photographic instrument and a record of the transition from earlier German camera makers into the Zeiss Ikon era.</p><a class="inquire" href="mailto:finefunkyart@gmail.com?subject=Inquiry%20about%20Zeiss%20Ikon%20Folding%20Camera">Inquire about this camera →</a></div></article>\n'''
+              html = html[:pos] + article + html[pos:]
+              page.write_text(html)
+
+          for p in parts:
+              p.unlink(missing_ok=True)
+          PY
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add cameras.html images/cameras/zeiss-ikon-folding-camera-20260907.jpg
+          git rm -f images/cameras/zeiss-folding-20260907.b64.*
+          git commit -m "Add Zeiss Ikon folding camera to chronological catalog"
+          git push
