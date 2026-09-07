@@ -1,0 +1,29 @@
+name: Install full Kodak Bullet image
+on:
+  push:
+    paths:
+      - '.github/workflows/install-kodak-bullet-full-20260907.yml'
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Decode full Kodak Bullet image
+        run: |
+          base64 -d images/cameras/kodak-bullet-jaqulin-full-20260907.b64 > images/cameras/kodak-bullet-jaqulin-full-20260907.jpg
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('cameras.html')
+          s=p.read_text()
+          s=s.replace('images/cameras/brownie-bullet.jpg?v=20260907-bullet-working','images/cameras/kodak-bullet-jaqulin-full-20260907.jpg?v=20260907-full-photo')
+          p.write_text(s)
+          PY
+      - name: Commit repaired image
+        run: |
+          git config user.name 'Jaqulin'
+          git config user.email 'jaqjos@gmail.com'
+          git add images/cameras/kodak-bullet-jaqulin-full-20260907.jpg cameras.html
+          git commit -m 'Use full Kodak Bullet camera photo' || exit 0
+          git push
