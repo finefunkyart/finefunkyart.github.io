@@ -12,10 +12,14 @@
 .camera-page .catalog .entry:nth-of-type(8) .camera-photo{display:flex!important;align-items:center!important;justify-content:center!important;min-height:330px!important;background:#fff!important;}
 .camera-page .catalog .entry:nth-of-type(8) .camera-photo img{display:block!important;visibility:visible!important;opacity:1!important;width:auto!important;height:auto!important;max-width:100%!important;max-height:300px!important;margin:auto!important;object-fit:contain!important;object-position:center!important;filter:none!important;transform:none!important;image-rendering:auto!important;}
 
+/* Decorative Premo detail above the Vintage Cameras heading. */
+.camera-page .camera-hero::before{content:"";display:block;width:170px;height:212px;margin:0 auto 24px;background:url("images/cameras/no2-premo-hero-decoration-20260908.jpg?v=20260908-hero") center/contain no-repeat;}
+
 @media(max-width:520px){
   .camera-page .catalog .entry:nth-of-type(3) .camera-gallery img:nth-child(3){height:300px!important;}
   .camera-page .catalog .entry:nth-of-type(7) .camera-photo{min-height:300px!important;}
   .camera-page .catalog .entry:nth-of-type(7) .camera-photo img{height:290px!important;max-height:290px!important;}
   .camera-page .catalog .entry:nth-of-type(8) .camera-photo{min-height:290px!important;}
   .camera-page .catalog .entry:nth-of-type(8) .camera-photo img{max-width:100%!important;max-height:260px!important;transform:none!important;}
+  .camera-page .camera-hero::before{width:132px;height:165px;margin-bottom:18px;}
 }
