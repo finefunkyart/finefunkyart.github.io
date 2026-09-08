@@ -1,0 +1,1 @@
+Crown image cache should refresh after asset replacement.
