@@ -4,21 +4,21 @@
 .camera-page .catalog .entry:nth-of-type(3) .camera-gallery img{display:none!important;}
 .camera-page .catalog .entry:nth-of-type(3) .camera-gallery img:nth-child(3){display:block!important;width:100%!important;height:360px!important;object-fit:contain!important;object-position:center!important;background:#fff!important;}
 
-/* Eastman Kodak Bullet is collection entry 7. Use the raw GitHub asset as a fallback background so the image still displays if Pages serves a stale/broken local image response. */
-.camera-page .catalog .entry:nth-of-type(7) .camera-photo{display:flex!important;align-items:center!important;justify-content:center!important;min-height:360px!important;background:#fff url("https://raw.githubusercontent.com/finefunkyart/finefunkyart.github.io/main/images/cameras/eastman-kodak-bullet-final-20260907.jpg?v=20260908-bullet-raw") center/contain no-repeat!important;}
-.camera-page .catalog .entry:nth-of-type(7) .camera-photo img{display:block!important;visibility:visible!important;opacity:0!important;width:100%!important;height:340px!important;max-width:100%!important;max-height:340px!important;margin:auto!important;object-fit:contain!important;object-position:center!important;filter:none!important;transform:none!important;}
+/* Eastman Kodak Bullet is collection entry 7. Use the verified local JPEG directly as the figure background. */
+.camera-page .catalog .entry:nth-of-type(7) .camera-photo{display:flex!important;align-items:center!important;justify-content:center!important;min-height:360px!important;background:#fff url("images/cameras/eastman-kodak-bullet-final-20260907.jpg?v=20260908-local-bullet-3") center/contain no-repeat!important;}
+.camera-page .catalog .entry:nth-of-type(7) .camera-photo img{display:none!important;}
 
 /* Kodak Six-16 Senior is collection entry 8. Do not stretch or enlarge the source image. */
 .camera-page .catalog .entry:nth-of-type(8) .camera-photo{display:flex!important;align-items:center!important;justify-content:center!important;min-height:330px!important;background:#fff!important;}
 .camera-page .catalog .entry:nth-of-type(8) .camera-photo img{display:block!important;visibility:visible!important;opacity:1!important;width:auto!important;height:auto!important;max-width:100%!important;max-height:300px!important;margin:auto!important;object-fit:contain!important;object-position:center!important;filter:none!important;transform:none!important;image-rendering:auto!important;}
 
-/* Decorative Premo detail above the Vintage Cameras heading. Raw GitHub URL bypasses stale GitHub Pages asset caching. */
-.camera-page .camera-hero::before{content:"";display:block;width:170px;height:212px;margin:0 auto 24px;background:url("https://raw.githubusercontent.com/finefunkyart/finefunkyart.github.io/main/images/cameras/no2-premo-hero-decoration-20260908.jpg?v=20260908-hero-raw") center/contain no-repeat;}
+/* Decorative Premo detail above Vintage Cameras. Hide the broken HTML image and paint the verified local JPEG directly. */
+.camera-page .camera-hero>.hero-decor{display:none!important;}
+.camera-page .camera-hero::before{content:"";display:block;width:170px;height:212px;margin:0 auto 24px;background:#fff url("images/cameras/no2-premo-hero-decoration-20260908.jpg?v=20260908-local-hero-3") center/contain no-repeat!important;}
 
 @media(max-width:520px){
   .camera-page .catalog .entry:nth-of-type(3) .camera-gallery img:nth-child(3){height:300px!important;}
   .camera-page .catalog .entry:nth-of-type(7) .camera-photo{min-height:300px!important;}
-  .camera-page .catalog .entry:nth-of-type(7) .camera-photo img{height:290px!important;max-height:290px!important;}
   .camera-page .catalog .entry:nth-of-type(8) .camera-photo{min-height:290px!important;}
   .camera-page .catalog .entry:nth-of-type(8) .camera-photo img{max-width:100%!important;max-height:260px!important;transform:none!important;}
   .camera-page .camera-hero::before{width:132px;height:165px;margin-bottom:18px;}
