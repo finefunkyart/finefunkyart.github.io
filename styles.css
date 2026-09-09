@@ -9,5 +9,3 @@ img{-webkit-user-drag:none;user-select:none;-webkit-touch-callout:none}@media pr
 .camera-page .catalog>.entry:nth-child(7) .camera-photo{background:#fff url("images/cameras/brownie-bullet.jpg?v=20260908-bullet-local-fallback") center/contain no-repeat!important;min-height:390px}
 .camera-page .catalog>.entry:nth-child(7) .camera-photo>img{visibility:hidden!important}
 
-.artwork-shop-link{display:inline-block;margin-left:1rem;color:var(--rust);font-weight:600}
-@media(max-width:560px){.artwork-shop-link{display:block;margin:.65rem 0 0}}
