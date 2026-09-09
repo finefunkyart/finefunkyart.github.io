@@ -549,18 +549,6 @@
         i.addEventListener("contextmenu", (e) => e.preventDefault());
       });
 
-      const cafePressShop = "https://www.cafepress.com/shop/Finefunkyart";
-      document
-        .querySelectorAll('a[href^="mailto:finefunkyart@gmail.com?subject=Artwork%20Inquiry"]')
-        .forEach((inquiryLink) => {
-          const shopLink = document.createElement("a");
-          shopLink.className = "text-link artwork-shop-link";
-          shopLink.href = cafePressShop;
-          shopLink.target = "_blank";
-          shopLink.rel = "noopener";
-          shopLink.textContent = "Shop this artwork →";
-          inquiryLink.insertAdjacentElement("afterend", shopLink);
-        });
     </script>
   </body>
 </html>
