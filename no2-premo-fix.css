@@ -7,12 +7,10 @@
 .camera-page .catalog .entry:nth-of-type(8) .camera-photo{display:flex!important;align-items:center!important;justify-content:center!important;min-height:330px!important;background:#fff!important;}
 .camera-page .catalog .entry:nth-of-type(8) .camera-photo img{display:block!important;visibility:visible!important;opacity:1!important;width:auto!important;height:auto!important;max-width:100%!important;max-height:300px!important;margin:auto!important;object-fit:contain!important;object-position:center!important;filter:none!important;transform:none!important;image-rendering:auto!important;}
 
-/* Reliable Vintage Cameras hero: use one verified local JPEG, not the SVG wrapper. */
 .camera-page{background:#fbfaf6!important;}
 .camera-page .site-header{background:rgba(251,250,246,.98)!important;}
 .camera-page .camera-hero{max-width:1240px!important;padding:54px 24px 46px!important;text-align:center!important;}
 .camera-page .camera-hero>.hero-decor{display:none!important;}
-.camera-page .camera-hero::before{content:"";display:block!important;width:min(430px,86vw)!important;height:min(560px,112vw)!important;max-height:560px!important;margin:0 auto 24px!important;background-image:url("images/cameras/premo-hero-verified-20260908.jpg?v=20260908-hero-direct-1")!important;background-position:center!important;background-size:contain!important;background-repeat:no-repeat!important;background-color:transparent!important;mix-blend-mode:multiply!important;}
 
 @media(max-width:520px){
 .camera-page .catalog .entry:nth-of-type(3) .camera-gallery img:nth-child(3){height:300px!important}
@@ -20,5 +18,4 @@
 .camera-page .catalog .entry:nth-of-type(8) .camera-photo{min-height:290px!important}
 .camera-page .catalog .entry:nth-of-type(8) .camera-photo img{max-height:260px!important}
 .camera-page .camera-hero{padding:32px 14px 36px!important}
-.camera-page .camera-hero::before{width:min(330px,88vw)!important;height:min(430px,114vw)!important;margin-bottom:18px!important}
 }
