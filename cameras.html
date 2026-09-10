@@ -17,7 +17,6 @@
     .camera-hero .eyebrow,.collection-title .eyebrow{color:var(--gold)}
     .camera-hero h1{margin:.08em 0 .18em;font:400 clamp(3.8rem,8vw,7.4rem)/.95 "Libre Caslon Display",Georgia,serif;letter-spacing:-.045em}
     .camera-hero .intro{max-width:760px;margin:0 auto;color:var(--muted);font-size:1.08rem}
-    .hero-decor{display:block;width:170px;height:212px;object-fit:contain;margin:0 auto 24px;background:#fff}
     .collection-title{max-width:1120px;margin:auto;padding:38px 28px 28px;border-bottom:1px solid var(--line)}
     .collection-title h2{margin:0 0 12px;font:400 clamp(2.8rem,6vw,5.2rem)/1 "Libre Caslon Display",Georgia,serif}
     .collection-title p:last-child{max-width:760px;color:var(--muted)}
@@ -41,10 +40,9 @@
     .entry-copy>p:not(.type):last-of-type{margin-bottom:25px}
     .inquire{display:inline-block;padding:14px 16px;border:1px solid var(--gold);text-decoration:none;text-align:center;font-size:.68rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase}
 
-.hero-decor{display:none!important}
     .collection-foot{max-width:1120px;margin:-55px auto 95px;padding:0 28px;color:#817b71;font-size:.8rem}.camera-page footer{background:var(--dark)}
     @media(max-width:800px){.entry,.entry:nth-child(even){grid-template-columns:1fr;gap:28px;padding:42px 0}.entry:nth-child(even) .visual,.entry:nth-child(even) .entry-copy{order:initial}.camera-photo,.camera-gallery{max-width:520px}.entry .inquire{width:max-content}.date-chip{right:8px}}
-    @media(max-width:520px){.camera-hero{padding-top:62px}.camera-hero h1{font-size:3.6rem}.catalog,.collection-title{padding-left:20px;padding-right:20px}.camera-photo img{height:290px}.hero-decor{width:132px;height:165px;margin-bottom:18px}}
+    @media(max-width:520px){.camera-hero{padding-top:62px}.camera-hero h1{font-size:3.6rem}.catalog,.collection-title{padding-left:20px;padding-right:20px}.camera-photo img{height:290px}}
   </style>
 </head>
 <body class="camera-page">
@@ -81,7 +79,7 @@ document.getElementById('year').textContent=new Date().getFullYear();
 const b=document.querySelector('.menu-button'),n=document.getElementById('site-nav');
 b.addEventListener('click',()=>{const o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!o));n.classList.toggle('open',!o)});
 n.addEventListener('click',()=>{b.setAttribute('aria-expanded','false');n.classList.remove('open')});
-document.querySelectorAll('.camera-photo img,.camera-gallery img,.hero-decor').forEach(img=>{img.addEventListener('error',()=>{if(img.dataset.retried)return;img.dataset.retried='1';img.src=img.src.split('?')[0]+'?v='+Date.now();});});
+document.querySelectorAll('.camera-photo img,.camera-gallery img').forEach(img=>{img.addEventListener('error',()=>{if(img.dataset.retried)return;img.dataset.retried='1';img.src=img.src.split('?')[0]+'?v='+Date.now();});});
 </script>
 </body>
 </html>
