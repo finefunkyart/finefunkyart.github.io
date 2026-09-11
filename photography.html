@@ -1,4 +1,115 @@
-<a href="https://villageofus.com" target="_blank" rel="noopener"
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Selected photography by Jaqulin Joseph."
+    />
+    <title>Photography — Jaqulin Joseph</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Libre+Caslon+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=20260911-page-repair" />
+    <style>
+      .photo-page {
+        background: #171815;
+        color: #f5f1e7;
+      }
+      .photo-page .site-header {
+        background: rgba(23, 24, 21, 0.96);
+        border-color: #45463f;
+      }
+      .photo-page .wordmark,
+      .photo-page .site-header nav a,
+      .photo-page .menu-button,
+      .photo-page .nav-more summary {
+        color: #f5f1e7;
+      }
+      .photo-page .nav-more-menu {
+        background: #171815;
+        border-color: #45463f;
+      }
+      .photo-header {
+        padding: 100px max(28px, calc((100vw - 1180px) / 2)) 65px;
+      }
+      .photo-header h1 {
+        max-width: 900px;
+        margin: 12px 0 22px;
+        font: 400 clamp(4rem, 9vw, 8rem)/0.95 var(--serif);
+      }
+      .photo-header p:last-child {
+        max-width: 680px;
+        color: #b9b8af;
+      }
+      .photo-gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 42px;
+        padding: 0 max(28px, calc((100vw - 1180px) / 2)) 110px;
+      }
+      .photo-gallery figure {
+        margin: 0;
+        border: 1px solid #45463f;
+        background: #22231f;
+      }
+      .photo-gallery figure.wide {
+        grid-column: 1/-1;
+      }
+      .photo-gallery img {
+        width: 100%;
+        height: 620px;
+        object-fit: contain;
+        background: #0d0e0c;
+      }
+      .photo-gallery figcaption {
+        padding: 20px 22px;
+        border-top: 1px solid #45463f;
+      }
+      .photo-gallery h2 {
+        margin: 0;
+        font: 400 1.8rem var(--serif);
+      }
+      @media (max-width: 760px) {
+        .photo-gallery {
+          grid-template-columns: 1fr;
+        }
+        .photo-gallery figure.wide {
+          grid-column: auto;
+        }
+        .photo-gallery img {
+          height: auto;
+          max-height: 620px;
+        }
+        .photo-header {
+          padding-top: 70px;
+        }
+      }
+    </style>
+  </head>
+  <body class="photo-page">
+    <header class="site-header">
+      <a class="wordmark" href="index.html">Jaqulin Joseph</a
+      ><button
+        class="menu-button"
+        type="button"
+        aria-expanded="false"
+        aria-controls="site-nav"
+      >
+        Menu
+      </button>
+      <nav id="site-nav" aria-label="Primary navigation">
+        <a href="index.html#selected">Paintings</a
+        ><a href="sculpture.html">Sculpture</a
+        ><a href="photography.html" aria-current="page">Photography</a>
+        <details class="nav-more">
+          <summary>More</summary>
+          <div class="nav-more-menu">
+            <a href="cameras.html">Cameras</a><a href="books.html">Books</a<a href="https://villageofus.com" target="_blank" rel="noopener"
               >Village of Us ↗</a
             >
           </div>
